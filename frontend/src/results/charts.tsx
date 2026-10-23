@@ -2,14 +2,18 @@ import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxi
 import type { Keyword, Person } from "../types";
 
 // Single-series charts: one violet hue, recessive axes, hover tooltip, no legend.
-const BAR = "#7b6ad9";
-const AXIS = { fontSize: 12, fill: "#6b6780" };
+// Colors are CSS custom properties (not hex) so the charts re-theme with light/dark mode —
+// SVG presentation attributes accept var() in all evergreen browsers.
+const BAR = "var(--color-violet-500)";
+const AXIS = { fontSize: 12, fill: "var(--color-muted)" };
+const GRID_STROKE = "var(--color-line)";
+const CURSOR_FILL = "var(--color-lavender-50)";
 
 function TooltipBox({ active, payload, unit }: { active?: boolean; payload?: { payload: { name: string; value: number; extra?: string } }[]; unit: string }) {
   if (!active || !payload?.length) return null;
   const p = payload[0].payload;
   return (
-    <div className="rounded-xl border border-line bg-surface px-3 py-2 text-xs shadow-[var(--shadow-lift)]">
+    <div className="rounded-xl border border-line-strong bg-surface-2 px-3 py-2 text-xs shadow-[var(--shadow-lift)]">
       <div className="font-medium text-ink">{p.name}</div>
       <div className="text-muted">
         {p.value}
@@ -28,10 +32,10 @@ export function TalkShareChart({ people }: { people: Person[] }) {
     <div style={{ height: Math.max(140, data.length * 44) }}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} layout="vertical" margin={{ top: 0, right: 24, bottom: 0, left: 0 }} barCategoryGap={10}>
-          <CartesianGrid horizontal={false} stroke="#ebe8f3" />
+          <CartesianGrid horizontal={false} stroke={GRID_STROKE} />
           <XAxis type="number" domain={[0, 100]} tickFormatter={(v) => `${v}%`} tick={AXIS} axisLine={false} tickLine={false} />
           <YAxis type="category" dataKey="name" width={120} tick={AXIS} axisLine={false} tickLine={false} />
-          <Tooltip cursor={{ fill: "#f6f4fe" }} content={<TooltipBox unit="% of words" />} />
+          <Tooltip cursor={{ fill: CURSOR_FILL }} content={<TooltipBox unit="% of words" />} />
           <Bar dataKey="value" fill={BAR} radius={[0, 4, 4, 0]} maxBarSize={22} />
         </BarChart>
       </ResponsiveContainer>
@@ -45,10 +49,10 @@ export function KeywordChart({ keywords }: { keywords: Keyword[] }) {
     <div style={{ height: Math.max(160, data.length * 34) }}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} layout="vertical" margin={{ top: 0, right: 24, bottom: 0, left: 0 }} barCategoryGap={8}>
-          <CartesianGrid horizontal={false} stroke="#ebe8f3" />
+          <CartesianGrid horizontal={false} stroke={GRID_STROKE} />
           <XAxis type="number" allowDecimals={false} tick={AXIS} axisLine={false} tickLine={false} />
           <YAxis type="category" dataKey="name" width={150} tick={AXIS} axisLine={false} tickLine={false} />
-          <Tooltip cursor={{ fill: "#f6f4fe" }} content={<TooltipBox unit=" mentions" />} />
+          <Tooltip cursor={{ fill: CURSOR_FILL }} content={<TooltipBox unit=" mentions" />} />
           <Bar dataKey="value" fill={BAR} radius={[0, 4, 4, 0]} maxBarSize={18} />
         </BarChart>
       </ResponsiveContainer>

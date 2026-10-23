@@ -16,7 +16,7 @@ export function EvidenceList({ evidence, defaultOpen = false, label = "Evidence"
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="inline-flex items-center gap-1 text-xs font-medium text-violet-600 hover:text-violet-700"
+        className="inline-flex items-center gap-1 font-mono text-[11.5px] font-medium text-violet-400 hover:text-violet-300"
         aria-expanded={open}
       >
         <Quote className="h-3.5 w-3.5" />
@@ -30,10 +30,10 @@ export function EvidenceList({ evidence, defaultOpen = false, label = "Evidence"
               <button
                 type="button"
                 onClick={() => navigate(`/results/evidence?s=${e.sentence_id}`)}
-                className="group w-full rounded-xl border-l-2 border-lavender-300 bg-lavender-50/60 px-3 py-2 text-left text-[13px] leading-relaxed text-ink-soft transition hover:border-violet-500 hover:bg-lavender-50"
+                className="group w-full rounded-xl border-l-2 border-lime-400/50 bg-wash-1 px-3 py-2 text-left text-[13px] leading-relaxed text-ink-soft transition hover:border-lime-400 hover:bg-wash-2"
                 title="Show in transcript"
               >
-                <span className="mr-1.5 text-[11px] font-semibold text-violet-600">
+                <span className="mr-1.5 font-mono text-[11px] font-medium text-lime-400">
                   {e.timestamp && <span className="mr-1 font-normal text-faint">{e.timestamp}</span>}
                   {e.speaker ?? "Transcript"}
                 </span>

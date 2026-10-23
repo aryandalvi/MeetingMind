@@ -6,11 +6,11 @@ import { cx, SectionHeader } from "../components/ui";
 
 type Kind = "action" | "decision" | "risk" | "question" | "summary";
 const KIND_STYLE: Record<Kind, { label: string; cls: string; mark: string }> = {
-  action: { label: "Action", cls: "bg-lavender-100 text-violet-700", mark: "decoration-violet-400" },
+  action: { label: "Action", cls: "bg-lavender-100 text-violet-300", mark: "decoration-violet-400" },
   decision: { label: "Decision", cls: "bg-sage-50 text-sage-600", mark: "decoration-sage-600" },
   risk: { label: "Risk", cls: "bg-blush-100 text-blush-600", mark: "decoration-blush-400" },
   question: { label: "Question", cls: "bg-amber-50 text-amber-600", mark: "decoration-amber-600" },
-  summary: { label: "Summary", cls: "bg-mist text-muted border border-line", mark: "decoration-faint" },
+  summary: { label: "Summary", cls: "bg-wash-2 text-muted border border-line", mark: "decoration-faint" },
 };
 
 /** The full transcript, with every sentence that supports an extracted item tagged. */
@@ -66,7 +66,7 @@ export function TranscriptEvidence({ report }: { report: AnalysisReport }) {
               key={k}
               onClick={() => setOnly(k)}
               aria-pressed={only === k}
-              className={cx("rounded-full border px-3 py-1 text-xs transition", only === k ? "border-violet-400 bg-lavender-50 font-medium text-violet-700" : "border-line text-muted hover:text-ink")}
+              className={cx("rounded-full border px-3 py-1 text-xs transition", only === k ? "border-lavender-300 bg-lavender-100 font-medium text-ink" : "border-line text-muted hover:text-ink")}
             >
               {k === "all" ? "Everything" : KIND_STYLE[k].label} {k !== "all" && <span className="text-faint">{counts(k)}</span>}
             </button>
@@ -83,7 +83,7 @@ export function TranscriptEvidence({ report }: { report: AnalysisReport }) {
             <div key={u.id} className="grid gap-1 px-5 py-3.5 sm:grid-cols-[150px_1fr] sm:gap-4">
               <div className="text-[13px]">
                 <div className="font-semibold text-ink">{u.speaker ?? "—"}</div>
-                {u.timestamp && <div className="text-xs text-faint tabular-nums">{u.timestamp}</div>}
+                {u.timestamp && <div className="font-mono text-[11px] text-lime-400/80 tabular-nums">{u.timestamp}</div>}
               </div>
               <p className="text-[14px] leading-7 text-ink-soft">
                 {sents.map((s) => {

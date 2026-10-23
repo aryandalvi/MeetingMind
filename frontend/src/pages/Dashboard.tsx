@@ -11,7 +11,6 @@ import {
   Lock,
   Quote,
   ShieldAlert,
-  Sparkles,
   Tags,
   Upload,
   Users,
@@ -19,7 +18,7 @@ import {
 } from "lucide-react";
 import { useWorkspace } from "../state/workspace";
 import { SAMPLE } from "../lib/sample";
-import { Badge, Button, Sparkle } from "../components/ui";
+import { Badge, Button, Sparkle, Waveform } from "../components/ui";
 
 const FEATURES = [
   { icon: FileText, title: "Executive & detailed summaries", text: "Hierarchical summarization with a grounding check against the transcript." },
@@ -35,38 +34,36 @@ const FEATURES = [
 function PreviewStack() {
   return (
     <div className="relative mx-auto w-full max-w-md lg:mx-0">
-      <Sparkle className="sparkle-twinkle absolute -top-4 left-6 text-blush-400" size={18} />
-      <Sparkle className="sparkle-twinkle absolute top-24 -right-3 text-violet-400 [animation-delay:1.2s]" size={14} />
-      <Sparkle className="sparkle-twinkle absolute bottom-6 -left-4 text-lavender-300 [animation-delay:2.1s]" size={16} />
-      <div className="card relative rotate-[-1.5deg] p-5">
-        <div className="mb-2 flex items-center gap-2">
-          <Badge tone="sage">
+      <div aria-hidden="true" className="pointer-events-none absolute -inset-10 rounded-full bg-[radial-gradient(closest-side,rgb(139_92_246/0.28),transparent)] blur-2xl" />
+      <div className="card relative rotate-[-1.5deg] border-lavender-200 p-5">
+        <div className="mb-2.5 flex items-center justify-between gap-2">
+          <Badge tone="lime">
             <CheckCircle2 className="h-3 w-3" /> confirmed
           </Badge>
-          <span className="text-xs text-faint">Decision</span>
+          <span className="font-mono text-[10.5px] text-faint">DEC-01 · decision</span>
         </div>
-        <p className="text-[15px] font-medium text-ink">Move the launch to March 17.</p>
-        <p className="mt-2 border-l-2 border-lavender-300 pl-2.5 text-xs text-muted italic">“Alright, we decided to move the launch to March 17.” — Priya</p>
+        <p className="text-[15px] font-semibold text-ink">Move the launch to March 17.</p>
+        <p className="mt-2.5 border-l-2 border-lime-400/60 pl-2.5 text-xs text-muted italic">“Alright, we decided to move the launch to March 17.” — Priya</p>
       </div>
       <div className="card relative mt-[-10px] ml-8 rotate-[1.2deg] p-5">
-        <div className="mb-2 flex items-center justify-between">
-          <span className="text-xs text-faint">Action item</span>
+        <div className="mb-2.5 flex items-center justify-between">
+          <span className="font-mono text-[10.5px] text-faint">ACT-03 · action item</span>
           <Badge tone="violet">Thu, Mar 5</Badge>
         </div>
-        <p className="text-[15px] font-medium text-ink">Fix the checkout crash</p>
+        <p className="text-[15px] font-semibold text-ink">Fix the checkout crash</p>
         <div className="mt-3 flex items-center gap-2 text-xs text-muted">
-          <span className="grid h-6 w-6 place-items-center rounded-full bg-blush-100 text-[10px] font-semibold text-blush-600">MC</span>
-          Marcus Chen · self-commitment
+          <span className="grid h-6 w-6 place-items-center rounded-full bg-gradient-to-br from-violet-400 to-violet-800 font-mono text-[10px] font-semibold text-white">MC</span>
+          Marcus Chen · <span className="font-mono text-[11px]">self-commitment</span>
         </div>
       </div>
-      <div className="card relative mt-[-8px] mr-10 rotate-[-0.6deg] p-5">
-        <div className="mb-2 flex items-center gap-2">
+      <div className="card relative mt-[-8px] mr-10 rotate-[-0.6deg] border-rose-600/30 p-5">
+        <div className="mb-2.5 flex items-center gap-2">
           <Badge tone="rose">blocker</Badge>
-          <span className="text-xs text-faint">Risk</span>
+          <span className="font-mono text-[10.5px] text-faint">RSK-02</span>
         </div>
         <p className="text-[14px] text-ink-soft">Blocked until PayFlow releases SDK 4.2.</p>
       </div>
-      <p className="mt-3 text-center text-[11px] text-faint">Example output from the sample transcript</p>
+      <p className="relative mt-4 text-center font-mono text-[10.5px] text-faint">example output from the sample transcript</p>
     </div>
   );
 }
@@ -85,17 +82,17 @@ export function Dashboard() {
       <section className="relative overflow-hidden">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_55%_at_75%_20%,var(--color-lavender-100),transparent_70%),radial-gradient(40%_40%_at_10%_90%,var(--color-blush-50),transparent_70%)]"
+          className="pointer-events-none absolute inset-0 bg-[linear-gradient(var(--color-grid-line)_1px,transparent_1px),linear-gradient(90deg,var(--color-grid-line)_1px,transparent_1px)] bg-[size:44px_44px] [mask-image:radial-gradient(70%_60%_at_50%_30%,black,transparent)]"
         />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_1fr] lg:py-24">
-          <div>
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-surface/80 px-3 py-1 text-xs text-muted shadow-[var(--shadow-soft)]">
-              <Sparkles className="h-3.5 w-3.5 text-violet-500" /> Meeting intelligence, evidence first
+        <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-4 py-14 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:px-8 lg:py-20">
+          <div className="fade-up">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-lime-300 bg-lime-50 px-3 py-1 font-mono text-[11px] text-lime-400">
+              <span className="live-dot" /> meeting intelligence · evidence first
             </div>
-            <h1 className="display text-[44px] leading-[1.05] sm:text-[64px]">
+            <h1 className="display text-[46px] leading-[1.02] sm:text-[68px]">
               Your meetings,
               <br />
-              <em className="text-violet-600">made meaningful.</em>
+              <span className="text-gradient">made meaningful.</span>
             </h1>
             <p className="mt-5 max-w-xl text-[16.5px] leading-relaxed text-muted">
               Paste a transcript or upload a file. MeetingMind finds the decisions, action items, owners, deadlines,
@@ -114,7 +111,7 @@ export function Dashboard() {
                 </Button>
               )}
             </div>
-            <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
+            <div className="mt-7 flex flex-wrap gap-x-5 gap-y-2 font-mono text-[11.5px] text-faint">
               <span className="inline-flex items-center gap-1.5">
                 <Upload className="h-3.5 w-3.5" /> TXT, DOCX, PDF, VTT
               </span>
@@ -130,23 +127,28 @@ export function Dashboard() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
-        <div className="eyebrow mb-2">What you get</div>
-        <h2 className="display mb-8 text-[34px]">Twelve views of one conversation</h2>
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <div className="eyebrow mb-2">What you get</div>
+            <h2 className="display text-[32px] sm:text-[38px]">Twelve views of one conversation</h2>
+          </div>
+          <Waveform bars={18} height={26} />
+        </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {FEATURES.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="card group p-5 transition hover:-translate-y-0.5 hover:shadow-[var(--shadow-lift)]">
-              <div className="mb-4 grid h-10 w-10 place-items-center rounded-xl bg-lavender-50 text-violet-600 transition group-hover:bg-violet-600 group-hover:text-white">
+            <div key={title} className="card card-hover group p-5 hover:-translate-y-0.5">
+              <div className="mb-4 grid h-10 w-10 place-items-center rounded-xl border border-lavender-200 bg-lavender-50 text-violet-400 transition group-hover:border-transparent group-hover:bg-gradient-to-br group-hover:from-violet-400 group-hover:to-violet-800 group-hover:text-white">
                 <Icon className="h-5 w-5" />
               </div>
-              <div className="font-medium text-ink">{title}</div>
-              <p className="mt-1 text-sm leading-relaxed text-muted">{text}</p>
+              <div className="font-semibold text-ink">{title}</div>
+              <p className="mt-1 text-[13.5px] leading-relaxed text-muted">{text}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-4 px-4 pb-20 sm:px-6 lg:grid-cols-[1.4fr_1fr]">
+      <section className="mx-auto grid max-w-6xl gap-4 px-4 pb-20 sm:px-6 lg:grid-cols-[1.4fr_1fr] lg:px-8">
         <div className="card p-6 sm:p-8">
           <div className="eyebrow mb-2">How it works</div>
           <ol className="mt-4 space-y-5">
@@ -156,7 +158,7 @@ export function Dashboard() {
               ["Review, edit, export", "Every item links to its transcript evidence. Fix owners, dates and statuses, then download PDF minutes, Markdown, CSV or JSON."],
             ].map(([title, text], i) => (
               <li key={title} className="flex gap-4">
-                <span className="display grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blush-50 text-lg text-blush-600">{i + 1}</span>
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-lime-300 bg-lime-50 font-mono text-[13px] text-lime-400">0{i + 1}</span>
                 <div>
                   <div className="font-medium text-ink">{title}</div>
                   <p className="mt-0.5 text-sm leading-relaxed text-muted">{text}</p>
@@ -166,11 +168,11 @@ export function Dashboard() {
           </ol>
         </div>
         <div className="card relative overflow-hidden p-6 sm:p-8">
-          <Sparkle className="absolute top-6 right-6 text-blush-200" size={22} />
-          <div className="mb-4 grid h-10 w-10 place-items-center rounded-xl bg-sage-50 text-sage-600">
+          <Sparkle className="sparkle-twinkle absolute top-6 right-6 text-lime-400" size={18} />
+          <div className="mb-4 grid h-10 w-10 place-items-center rounded-xl border border-sage-600/30 bg-sage-50 text-sage-600">
             <Lock className="h-5 w-5" />
           </div>
-          <div className="font-medium text-ink">Privacy by design</div>
+          <div className="font-semibold text-ink">Privacy by design</div>
           <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted">
             <li>• Models run on the MeetingMind server you start — no paid or third-party AI APIs.</li>
             <li>• No database, accounts or meeting history. Uploads are deleted right after text extraction.</li>

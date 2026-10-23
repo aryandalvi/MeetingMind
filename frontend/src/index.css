@@ -1,80 +1,223 @@
 @import "tailwindcss";
 
+/*
+ * Two themes, one token set. Dark ("Luminous Obsidian") is the default; light
+ * ("Morning Lavender") is opted into via [data-theme="light"] on <html> — see
+ * ThemeToggle in components/ui.tsx. Every component reads these names, never a
+ * raw hex, so re-theming only ever happens here:
+ *   ink / ink-soft / muted / faint  → text, brightest to dimmest
+ *   mist → canvas, surface/surface-2 → raised panels, line → hairline borders
+ *   lavender-* → translucent violet tints, violet-* → solid violet (400 = text, 500 = fills)
+ *   blush → hot pink (decorative), sage → emerald (done/ok), rose → red (danger)
+ *   lime → the "live" / AI signal — neon lime in dark mode, hot pink in light mode
+ *   wash-* → neutral glass overlays (replaces literal white/black utilities so they re-theme too)
+ */
 @theme {
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-display: "Plus Jakarta Sans Variable", "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "Cascadia Code", Consolas, monospace;
 
-  --color-ink: #1f1b2e;
-  --color-ink-soft: #3d3850;
-  --color-muted: #6b6780;
-  --color-faint: #9a96ab;
-  --color-line: #ebe8f3;
-  --color-line-strong: #dcd7ea;
-  --color-mist: #f7f6fb;
-  --color-surface: #ffffff;
+  --color-ink: #f4f4f5;
+  --color-ink-soft: #d4d4d8;
+  --color-muted: #a1a1aa;
+  --color-faint: #71717a;
+  --color-line: rgb(255 255 255 / 0.08);
+  --color-line-strong: rgb(255 255 255 / 0.14);
+  --color-mist: #09090b;
+  --color-surface: #12111a;
+  --color-surface-2: #1a1825;
 
-  --color-lavender-50: #f6f4fe;
-  --color-lavender-100: #ede9fc;
-  --color-lavender-200: #dcd4f8;
-  --color-lavender-300: #c2b5f1;
-  --color-violet-400: #9585e6;
-  --color-violet-500: #7b6ad9;
-  --color-violet-600: #6d5bd0;
-  --color-violet-700: #5846b3;
+  --color-lavender-50: rgb(139 92 246 / 0.1);
+  --color-lavender-100: rgb(139 92 246 / 0.16);
+  --color-lavender-200: rgb(139 92 246 / 0.3);
+  --color-lavender-300: rgb(167 139 250 / 0.55);
+  --color-violet-300: #c4b5fd;
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+  --color-violet-600: #a78bfa;
+  --color-violet-700: #c4b5fd;
+  --color-violet-800: #7c3aed;
 
-  --color-blush-50: #fdf4f7;
-  --color-blush-100: #fbe8ee;
-  --color-blush-200: #f6d5df;
-  --color-blush-400: #e3a3b7;
-  --color-blush-600: #b5577a;
+  --color-blush-50: rgb(244 114 182 / 0.08);
+  --color-blush-100: rgb(244 114 182 / 0.14);
+  --color-blush-200: rgb(244 114 182 / 0.4);
+  --color-blush-400: #f9a8d4;
+  --color-blush-600: #f472b6;
 
-  --color-sage-50: #eff7f3;
-  --color-sage-600: #4c8a72;
-  --color-amber-50: #fdf6e9;
-  --color-amber-600: #a87420;
-  --color-rose-50: #fdf0f2;
-  --color-rose-600: #b34a63;
+  /* The "live" / AI accent — neon lime at night, irl-pink by day (see [data-theme="light"]). */
+  --color-lime-50: rgb(163 230 53 / 0.08);
+  --color-lime-300: rgb(163 230 53 / 0.3);
+  --color-lime-400: #a3e635;
 
-  --shadow-soft: 0 1px 2px rgb(31 27 46 / 0.04), 0 4px 16px rgb(31 27 46 / 0.05);
-  --shadow-lift: 0 2px 6px rgb(31 27 46 / 0.05), 0 12px 32px rgb(109 91 208 / 0.10);
+  --color-sage-50: rgb(78 222 163 / 0.1);
+  --color-sage-600: #4edea3;
+  --color-amber-50: rgb(251 191 36 / 0.1);
+  --color-amber-600: #fbbf24;
+  --color-rose-50: rgb(251 113 133 / 0.1);
+  --color-rose-600: #fb7185;
+
+  /* Neutral glass overlays — stand in for literal bg-white/[x] / bg-black/[x] so those re-theme too. */
+  --color-wash-1: rgb(255 255 255 / 0.035);
+  --color-wash-2: rgb(255 255 255 / 0.05);
+  --color-wash-3: rgb(255 255 255 / 0.07);
+  --color-wash-4: rgb(255 255 255 / 0.3);
+  --color-field: rgb(0 0 0 / 0.4);
+  --color-scroll: rgb(255 255 255 / 0.14);
+  --color-grid-line: rgb(255 255 255 / 0.025);
+  --color-highlight: rgb(163 230 53 / 0.25);
+  /* Text color for small badges filled solid with lime/rose — those fills flip from
+     light (needs dark text) to deep (needs light text) between themes; this follows. */
+  --color-on-vivid: black;
+  --gradient-brand: linear-gradient(100deg, #c4b5fd 0%, #a78bfa 35%, #4edea3 75%, #a3e635 100%);
+
+  --shadow-soft: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 8px 24px -12px rgb(0 0 0 / 0.6);
+  --shadow-lift: 0 0 0 1px rgb(139 92 246 / 0.35), 0 8px 32px -8px rgb(139 92 246 / 0.35);
+  --shadow-glow: 0 0 0 1px rgb(255 255 255 / 0.12) inset, 0 10px 30px -10px rgb(139 92 246 / 0.75);
   --radius-xl2: 1.25rem;
+}
+
+/* "Morning Lavender" — light theme, lifted from the MeetingMind Intelligence mockup,
+   with the neon "live" accent swapped for a hot, irl pink instead of the mockup's muted violet. */
+:root[data-theme="light"] {
+  --color-ink: #18181b;
+  --color-ink-soft: #3f3f46;
+  --color-muted: #52525b;
+  --color-faint: #71717a;
+  --color-line: rgb(24 24 27 / 0.08);
+  --color-line-strong: rgb(24 24 27 / 0.15);
+  --color-mist: #fbf9fb;
+  --color-surface: #ffffff;
+  --color-surface-2: #f6f2fa;
+
+  --color-lavender-50: #f6f2fe;
+  --color-lavender-100: #ede4fc;
+  --color-lavender-200: #dccdf8;
+  --color-lavender-300: #c7aef2;
+  --color-violet-300: #6d28d9;
+  --color-violet-400: #8b5cf6;
+  --color-violet-500: #7c3aed;
+  --color-violet-600: #7c3aed;
+  --color-violet-700: #5b21b6;
+  --color-violet-800: #4c1d95;
+
+  --color-blush-50: #fff0f6;
+  --color-blush-100: #fce0ef;
+  --color-blush-200: #f9bfe0;
+  --color-blush-400: #ec6cb1;
+  --color-blush-600: #be1c73;
+
+  /* irlypink: the signature "live" signal becomes a hot pink in daylight. */
+  --color-lime-50: #fdf2f8;
+  --color-lime-300: #f6a8d8;
+  --color-lime-400: #d6267f;
+
+  --color-sage-50: #ecfdf5;
+  --color-sage-600: #059669;
+  --color-amber-50: #fffbeb;
+  --color-amber-600: #d97706;
+  --color-rose-50: #fff1f2;
+  --color-rose-600: #e11d48;
+
+  --color-wash-1: rgb(24 24 27 / 0.035);
+  --color-wash-2: rgb(24 24 27 / 0.05);
+  --color-wash-3: rgb(24 24 27 / 0.065);
+  --color-wash-4: rgb(24 24 27 / 0.1);
+  --color-field: #fdfcfe;
+  --color-scroll: rgb(24 24 27 / 0.18);
+  --color-grid-line: rgb(24 24 27 / 0.05);
+  --color-highlight: rgb(214 38 127 / 0.18);
+  --color-on-vivid: white;
+  --gradient-brand: linear-gradient(100deg, #7c3aed 0%, #a21caf 55%, #d6267f 100%);
+
+  --shadow-soft: 0 1px 0 rgb(255 255 255 / 0.6) inset, 0 8px 22px -12px rgb(24 24 27 / 0.12);
+  --shadow-lift: 0 0 0 1px rgb(124 58 237 / 0.22), 0 12px 32px -10px rgb(124 58 237 / 0.22);
+  --shadow-glow: 0 0 0 1px rgb(255 255 255 / 0.35) inset, 0 10px 26px -8px rgb(124 58 237 / 0.4);
 }
 
 @layer base {
   html {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    color-scheme: dark;
+  }
+  html[data-theme="light"] {
+    color-scheme: light;
   }
   body {
     @apply bg-mist text-ink font-sans;
     font-feature-settings: "cv11", "ss01";
+    background-image:
+      radial-gradient(50rem 30rem at 85% -10%, rgb(139 92 246 / 0.12), transparent 70%),
+      radial-gradient(40rem 26rem at -10% 110%, rgb(16 185 129 / 0.07), transparent 70%);
+    background-attachment: fixed;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  [data-theme="light"] body {
+    background-image:
+      radial-gradient(50rem 30rem at 85% -10%, rgb(124 58 237 / 0.09), transparent 70%),
+      radial-gradient(40rem 28rem at -8% 108%, rgb(214 38 127 / 0.08), transparent 70%);
   }
   ::selection {
-    background: var(--color-lavender-200);
+    background: rgb(139 92 246 / 0.45);
+    color: #fff;
+  }
+  [data-theme="light"] ::selection {
+    background: rgb(214 38 127 / 0.25);
+    color: #3b0764;
   }
   :focus-visible {
     outline: 2px solid var(--color-violet-500);
     outline-offset: 2px;
   }
+  option {
+    background: var(--color-surface);
+    color: var(--color-ink);
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);
+  }
+  [data-theme="light"] input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: none;
+    opacity: 0.6;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scroll) transparent;
+  }
 }
 
 @layer components {
   .card {
-    @apply rounded-2xl border border-line bg-surface shadow-[var(--shadow-soft)];
+    @apply rounded-2xl border border-line bg-surface/70 shadow-[var(--shadow-soft)] backdrop-blur-xl;
+  }
+  .card-hover {
+    @apply transition duration-200 hover:border-lavender-300 hover:shadow-[var(--shadow-lift)];
   }
   .field {
-    @apply w-full rounded-xl border border-line-strong bg-surface px-3.5 py-2.5 text-sm text-ink placeholder:text-faint
-      transition focus:border-violet-400 focus:ring-4 focus:ring-lavender-100 focus:outline-none;
+    @apply w-full rounded-xl border border-line-strong px-3.5 py-2.5 text-sm text-ink placeholder:text-faint
+      transition focus:border-violet-500 focus:shadow-[0_0_0_1px_var(--color-violet-500),0_0_16px_rgb(139_92_246/0.25)] focus:outline-none;
+    background: var(--color-field);
   }
   .label {
-    @apply mb-1.5 block text-[13px] font-medium text-ink-soft;
+    @apply mb-1.5 block font-mono text-[11px] font-medium tracking-[0.08em] text-muted uppercase;
   }
   .eyebrow {
-    @apply text-[11px] font-semibold tracking-[0.14em] text-violet-600 uppercase;
+    @apply font-mono text-[11px] font-medium tracking-[0.14em] text-lime-400 uppercase;
   }
   .display {
     font-family: var(--font-display);
-    @apply font-normal tracking-tight text-ink;
+    @apply font-bold tracking-[-0.03em] text-ink;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-brand);
+  }
+  .kbd {
+    @apply rounded-md border border-line-strong bg-wash-2 px-1.5 py-0.5 font-mono text-[10px] text-muted;
+  }
+  .live-dot {
+    @apply relative inline-block h-1.5 w-1.5 rounded-full bg-lime-400;
+    box-shadow: 0 0 8px var(--color-lime-400);
   }
 }
 
@@ -82,7 +225,7 @@
   animation: hl 2.2s ease-out 1;
 }
 @keyframes hl {
-  0% { background-color: var(--color-blush-200); }
+  0% { background-color: var(--color-highlight); }
   100% { background-color: transparent; }
 }
 
@@ -94,6 +237,32 @@
   50% { opacity: 1; transform: scale(1) rotate(12deg); }
 }
 
+/* Thin multi-bar "waveform" used as a decorative live indicator. */
+.wave > span {
+  display: inline-block;
+  width: 3px;
+  border-radius: 9999px;
+  animation: wave 1.1s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.35); }
+  50% { transform: scaleY(1); }
+}
+
+.fade-up {
+  animation: fade-up 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Theme toggle: the sun/moon swap with a little personality instead of a hard cut. */
+.theme-toggle-icon {
+  transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2), opacity 0.25s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .sparkle-twinkle, .hl-pulse { animation: none; }
+  .sparkle-twinkle, .hl-pulse, .wave > span, .fade-up, .theme-toggle-icon { animation: none; transition: none; }
 }
