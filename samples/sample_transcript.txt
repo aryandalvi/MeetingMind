@@ -1,0 +1,37 @@
+Meeting: Mobile App Launch Sync
+Date: March 4, 2026
+Attendees: Priya Sharma, Marcus Chen, Elena Rossi, David Okafor
+
+[00:00:05] Priya Sharma: Okay, let's get started. Thanks everyone for joining. The main thing today is the mobile app launch, and then I want to talk about the marketing campaign and the support plan.
+[00:00:21] Marcus Chen: Sounds good. So, quick status from engineering. QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed.
+[00:00:40] Priya Sharma: That's a real risk. What's the root cause?
+[00:00:46] Marcus Chen: The checkout crash is on our side, and I'll fix it by Thursday. The other two depend on the vendor SDK update, so we're blocked until PayFlow releases version 4.2.
+[00:01:05] Elena Rossi: I can contact PayFlow today and ask for an ETA on the SDK.
+[00:01:12] Priya Sharma: Great, please do. Marcus, can you also write up the bug details so Elena has something to send them?
+[00:01:19] Marcus Chen: Sure, I'll have that to Elena this afternoon.
+[00:01:25] Priya Sharma: Okay. Given the SDK dependency, I think we should move the launch date. What does everyone think about March 17?
+[00:01:36] David Okafor: Honestly, I'd prefer not to delay, but March 17 is safer.
+[00:01:42] Elena Rossi: Agreed. March 17 gives QA a full regression cycle.
+[00:01:48] Priya Sharma: Alright, we decided to move the launch to March 17. If the SDK still isn't ready by Friday, we'll revisit the date again.
+[00:02:02] Marcus Chen: We also agreed last week not to support Android 9 in this release, right? Let's keep that.
+[00:02:09] Priya Sharma: Yes, that's confirmed. Android 9 is out of scope.
+[00:02:15] Priya Sharma: Moving on to the marketing campaign. David, where are we?
+[00:02:20] David Okafor: The campaign assets are about eighty percent done. The landing page copy still needs legal review, and that has been slow. Legal has had it for two weeks.
+[00:02:35] Priya Sharma: Can someone follow up with legal about the landing page copy?
+[00:02:40] David Okafor: I'll take that. I'll ping their team lead tomorrow morning.
+[00:02:46] Elena Rossi: Should we also run paid ads on Instagram this time?
+[00:02:51] David Okafor: Maybe, but I'm not sure we have the budget. I need to check with finance and get back to you.
+[00:03:00] Priya Sharma: Let's tentatively plan for organic social only, pending the budget check.
+[00:03:07] David Okafor: Works for me. I'll prepare the press release draft by next Wednesday.
+[00:03:15] Priya Sharma: Someone needs to update the app store screenshots with the new onboarding screens.
+[00:03:22] Marcus Chen: The designers would know which screens changed, but we don't have anyone assigned yet.
+[00:03:30] Priya Sharma: Okay, let's figure that out offline. Last topic: the support plan for launch week.
+[00:03:38] Elena Rossi: The support team is short-staffed that week because two people are on leave, so response times might slip.
+[00:03:47] Priya Sharma: That's a concern. Could we bring in contractors for the week?
+[00:03:53] Elena Rossi: Possibly. I'll draft a staffing proposal with costs by end of week.
+[00:04:00] Priya Sharma: Good. And who is going to write the FAQ for the help center?
+[00:04:06] Marcus Chen: Not sure yet, it depends on who has bandwidth after the bug fixes.
+[00:04:12] Priya Sharma: Fine. We'll leave that open for now. Also, we decided against using the old chatbot vendor, so the in-app chat will stay disabled at launch.
+[00:04:24] David Okafor: Makes sense. Do we have a date for the internal demo?
+[00:04:29] Priya Sharma: Let's do the internal demo on March 13. I'll send the calendar invite.
+[00:04:36] Priya Sharma: Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release. Let's have a follow-up sync next Monday to check on the SDK. Thanks everyone.

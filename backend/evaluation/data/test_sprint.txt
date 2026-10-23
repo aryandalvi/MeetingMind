@@ -1,0 +1,56 @@
+Nadia Petrova  0:02
+Morning all. Sprint 14 planning. The goal is to finish the search filters and start the mobile offline mode.
+
+Carlos Mendez  0:15
+For search filters, the backend part is done. The frontend still needs the date range picker.
+
+Nadia Petrova  0:24
+Who's picking up the date range picker?
+
+Sofia Lindgren  0:28
+Me. I'll have it done by Wednesday.
+
+Carlos Mendez  0:35
+The offline mode is the risky one. We don't have a sync strategy yet and conflicts between devices could corrupt user data.
+
+Nadia Petrova  0:48
+Okay. Carlos, please write a short design doc for the sync approach before we commit to any estimates.
+
+Carlos Mendez  0:55
+Will do, I'll share it Thursday.
+
+Ben Adeyemi  1:02
+Heads up, I can't run the end-to-end tests because the staging environment has been down since yesterday.
+
+Nadia Petrova  1:10
+That blocks the release candidate. Has anyone contacted the platform team?
+
+Ben Adeyemi  1:15
+I opened a ticket but no response so far.
+
+Nadia Petrova  1:20
+I'll escalate it to their manager right after this meeting.
+
+Sofia Lindgren  1:28
+Can we drop support for iOS 14? It makes the offline storage code much more complicated.
+
+Nadia Petrova  1:35
+Let's keep iOS 14 for now, until we see the analytics numbers next month.
+
+Ben Adeyemi  1:44
+Should we move the sprint review to Friday afternoon?
+
+Carlos Mendez  1:49
+Friday afternoon works for me.
+
+Sofia Lindgren  1:52
+Same here.
+
+Nadia Petrova  1:55
+Great, so the sprint review moves to Friday afternoon. Ben, could you update the calendar invite?
+
+Ben Adeyemi  2:01
+Sure.
+
+Nadia Petrova  2:05
+One more open question: are we still planning the accessibility audit this quarter? I honestly don't know.

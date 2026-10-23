@@ -1,0 +1,22 @@
+Aisha: Okay everyone, this is our capstone check-in. We have the demo for Professor Lindqvist on November 20.
+Tom: Right. So the data pipeline is mostly working, but the scraper keeps getting rate limited by the city API.
+Aisha: That's going to slow us down. Can we switch to the bulk download they offer?
+Tom: I think so. I'll test the bulk download tonight and report back tomorrow.
+Mei: I finished the dashboard wireframes yesterday, they're in the shared folder.
+Aisha: Nice. Mei, could you turn the wireframes into a clickable Figma prototype before Monday?
+Mei: Yes, I can do that.
+Jonas: For the model, we agreed to use gradient boosting instead of the neural network. It's faster and easier to explain.
+Aisha: Yes, that's the decision. Let's not spend more time on the neural net.
+Jonas: I still need the cleaned dataset before I can retrain anything, so I'm basically blocked on Tom.
+Tom: Understood, the cleaned dataset will be ready by Thursday.
+Aisha: What about the ethics form? Has anyone submitted it?
+Mei: No idea, I thought Jonas was doing it.
+Jonas: Not me. Honestly I don't know who's supposed to.
+Aisha: Okay, someone needs to submit the ethics form this week or we can't collect survey data.
+Jonas: I'll do it, I have the template already.
+Aisha: Thanks. Also, should we present live or with a recorded video?
+Tom: Maybe a recording is safer in case the wifi fails.
+Aisha: Let's decide that next week, I want to ask the professor first.
+Mei: One concern: the poster printing deadline is usually two weeks before the demo, and we haven't started the poster.
+Aisha: Good point. I'll email the print shop to confirm their deadline.
+Aisha: Let's meet again on Friday at 4 to check progress.

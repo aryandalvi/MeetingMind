@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/.env
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/*.tsbuildinfo
+*.tsbuildinfo
+notebooks/meetingmind_exports/
+notebooks/exports_*/
+MeetingMind.zip
+.DS_Store

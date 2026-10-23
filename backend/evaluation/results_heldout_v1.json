@@ -1,0 +1,264 @@
+{
+  "dev": {
+    "transcripts": 3,
+    "system": {
+      "actions": {
+        "tp": 20,
+        "predicted": 22,
+        "gold": 21,
+        "precision": 0.909,
+        "recall": 0.952,
+        "f1": 0.93
+      },
+      "decisions": {
+        "tp": 7,
+        "predicted": 7,
+        "gold": 8,
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.933
+      },
+      "risks": {
+        "tp": 10,
+        "predicted": 11,
+        "gold": 10,
+        "precision": 0.909,
+        "recall": 1.0,
+        "f1": 0.952
+      },
+      "questions": {
+        "tp": 6,
+        "predicted": 8,
+        "gold": 6,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.857
+      },
+      "micro": {
+        "tp": 43,
+        "predicted": 48,
+        "gold": 45,
+        "precision": 0.896,
+        "recall": 0.956,
+        "f1": 0.925
+      },
+      "attributes": {
+        "owner": {
+          "correct": 20,
+          "of": 20,
+          "accuracy": 1.0
+        },
+        "deadline": {
+          "correct": 20,
+          "of": 20,
+          "accuracy": 1.0
+        },
+        "status": {
+          "correct": 7,
+          "of": 7,
+          "accuracy": 1.0
+        },
+        "kind": {
+          "correct": 9,
+          "of": 10,
+          "accuracy": 0.9
+        }
+      }
+    },
+    "baseline": {
+      "actions": {
+        "tp": 20,
+        "predicted": 34,
+        "gold": 21,
+        "precision": 0.588,
+        "recall": 0.952,
+        "f1": 0.727
+      },
+      "decisions": {
+        "tp": 6,
+        "predicted": 9,
+        "gold": 8,
+        "precision": 0.667,
+        "recall": 0.75,
+        "f1": 0.706
+      },
+      "risks": {
+        "tp": 7,
+        "predicted": 10,
+        "gold": 10,
+        "precision": 0.7,
+        "recall": 0.7,
+        "f1": 0.7
+      },
+      "questions": {
+        "tp": 5,
+        "predicted": 19,
+        "gold": 6,
+        "precision": 0.263,
+        "recall": 0.833,
+        "f1": 0.4
+      },
+      "micro": {
+        "tp": 38,
+        "predicted": 72,
+        "gold": 45,
+        "precision": 0.528,
+        "recall": 0.844,
+        "f1": 0.65
+      },
+      "attributes": {
+        "owner": {
+          "correct": 12,
+          "of": 20,
+          "accuracy": 0.6
+        },
+        "deadline": {
+          "correct": 7,
+          "of": 20,
+          "accuracy": 0.35
+        },
+        "status": {
+          "correct": 3,
+          "of": 6,
+          "accuracy": 0.5
+        },
+        "kind": {
+          "correct": 6,
+          "of": 7,
+          "accuracy": 0.857
+        }
+      }
+    }
+  },
+  "test": {
+    "transcripts": 4,
+    "system": {
+      "actions": {
+        "tp": 16,
+        "predicted": 23,
+        "gold": 19,
+        "precision": 0.696,
+        "recall": 0.842,
+        "f1": 0.762
+      },
+      "decisions": {
+        "tp": 4,
+        "predicted": 4,
+        "gold": 10,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.571
+      },
+      "risks": {
+        "tp": 3,
+        "predicted": 3,
+        "gold": 12,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "questions": {
+        "tp": 3,
+        "predicted": 4,
+        "gold": 4,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      },
+      "micro": {
+        "tp": 26,
+        "predicted": 34,
+        "gold": 45,
+        "precision": 0.765,
+        "recall": 0.578,
+        "f1": 0.658
+      },
+      "attributes": {
+        "owner": {
+          "correct": 15,
+          "of": 16,
+          "accuracy": 0.938
+        },
+        "deadline": {
+          "correct": 13,
+          "of": 16,
+          "accuracy": 0.812
+        },
+        "status": {
+          "correct": 3,
+          "of": 4,
+          "accuracy": 0.75
+        },
+        "kind": {
+          "correct": 3,
+          "of": 3,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "baseline": {
+      "actions": {
+        "tp": 18,
+        "predicted": 29,
+        "gold": 19,
+        "precision": 0.621,
+        "recall": 0.947,
+        "f1": 0.75
+      },
+      "decisions": {
+        "tp": 5,
+        "predicted": 6,
+        "gold": 10,
+        "precision": 0.833,
+        "recall": 0.5,
+        "f1": 0.625
+      },
+      "risks": {
+        "tp": 5,
+        "predicted": 6,
+        "gold": 12,
+        "precision": 0.833,
+        "recall": 0.417,
+        "f1": 0.556
+      },
+      "questions": {
+        "tp": 4,
+        "predicted": 19,
+        "gold": 4,
+        "precision": 0.211,
+        "recall": 1.0,
+        "f1": 0.348
+      },
+      "micro": {
+        "tp": 32,
+        "predicted": 60,
+        "gold": 45,
+        "precision": 0.533,
+        "recall": 0.711,
+        "f1": 0.61
+      },
+      "attributes": {
+        "owner": {
+          "correct": 10,
+          "of": 18,
+          "accuracy": 0.556
+        },
+        "deadline": {
+          "correct": 6,
+          "of": 18,
+          "accuracy": 0.333
+        },
+        "status": {
+          "correct": 4,
+          "of": 5,
+          "accuracy": 0.8
+        },
+        "kind": {
+          "correct": 4,
+          "of": 5,
+          "accuracy": 0.8
+        }
+      }
+    }
+  }
+}

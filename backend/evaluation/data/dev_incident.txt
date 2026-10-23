@@ -1,0 +1,19 @@
+[09:00] Rosa Delgado: Thanks for joining the incident review for Tuesday's checkout outage.
+[09:01] Kenji Watanabe: Quick timeline: the payment service ran out of database connections at 14:05 and checkout was down for 47 minutes.
+[09:02] Rosa Delgado: What was the root cause?
+[09:02] Kenji Watanabe: A config change doubled the worker count but the connection pool limit stayed at 100.
+[09:03] Liam O'Brien: And our alerting only fired after 20 minutes, which is a problem in itself.
+[09:04] Rosa Delgado: Agreed. We decided that every config change to the payment service now needs a second reviewer.
+[09:05] Kenji Watanabe: I'll add a connection pool alert at 80 percent utilisation by Friday.
+[09:05] Liam O'Brien: I can update the runbook with the rollback steps.
+[09:06] Rosa Delgado: Great, please do that before the next on-call rotation starts on Monday.
+[09:07] Priyanka Rao: There's another risk: the same pool settings are used in the refunds service, so it could fail the same way.
+[09:08] Rosa Delgado: Kenji, can you check the refunds service configuration as well?
+[09:08] Kenji Watanabe: Sure, I'll look at it this afternoon.
+[09:09] Liam O'Brien: Should we tell customers what happened in a blog post?
+[09:10] Rosa Delgado: I'm not sure yet, I need to check with the comms team first.
+[09:11] Priyanka Rao: We're also still waiting on the vendor's report about the load balancer errors.
+[09:12] Rosa Delgado: We will not roll back to the old load balancer; that option is off the table.
+[09:13] Priyanka Rao: I'll write the customer impact summary for finance by end of week.
+[09:14] Rosa Delgado: Who is going to own the post-incident follow-up tracker?
+[09:15] Liam O'Brien: Let's figure that out at the ops sync.

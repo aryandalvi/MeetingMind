@@ -1,0 +1,3248 @@
+{
+  "schema_version": "1.0",
+  "report_id": "79a3ae15fc4c",
+  "generated_at": "2026-10-23T19:32:20+00:00",
+  "edited_at": null,
+  "meeting": {
+    "title": "Mobile App Launch Sync",
+    "date": "2026-03-04",
+    "context": "Product team - Mobile app v2 launch"
+  },
+  "stats": {
+    "word_count": 658,
+    "sentence_count": 62,
+    "utterance_count": 33,
+    "speaker_count": 4,
+    "has_speaker_labels": true,
+    "has_timestamps": true,
+    "duration": "4m 31s",
+    "estimated_reading_minutes": 2.9,
+    "action_items": 12,
+    "unassigned_action_items": 3,
+    "decisions": 4,
+    "risks": 5,
+    "blockers": 2,
+    "open_questions": 4,
+    "items_needing_review": 6
+  },
+  "summary": {
+    "method": "abstractive",
+    "executive": [
+      {
+        "text": "The launch date of Android 9 has been moved to March 17.",
+        "evidence": [
+          {
+            "sentence_id": "s23",
+            "speaker": "Marcus Chen",
+            "timestamp": "00:02:02",
+            "text": "We also agreed last week not to support Android 9 in this release, right?"
+          },
+          {
+            "sentence_id": "s26",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:02:09",
+            "text": "Android 9 is out of scope."
+          }
+        ],
+        "grounding": "weak"
+      },
+      {
+        "text": "Engineering found three critical bugs in the payment flow last night.",
+        "evidence": [
+          {
+            "sentence_id": "s6",
+            "speaker": "Marcus Chen",
+            "timestamp": "00:00:21",
+            "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+          }
+        ],
+        "grounding": "supported"
+      },
+      {
+        "text": "The checkout crash is on their side and Marcus Chen will fix it by Thursday.",
+        "evidence": [
+          {
+            "sentence_id": "s9",
+            "speaker": "Marcus Chen",
+            "timestamp": "00:00:46",
+            "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+          }
+        ],
+        "grounding": "supported"
+      },
+      {
+        "text": "David Okafor and Priya Sharma are working on the marketing campaign.",
+        "evidence": [
+          {
+            "sentence_id": "s27",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:02:15",
+            "text": "Moving on to the marketing campaign."
+          },
+          {
+            "sentence_id": "s3",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:00:05",
+            "text": "The main thing today is the mobile app launch, and then I want to talk about the marketing campaign and the support plan."
+          }
+        ],
+        "grounding": "supported"
+      },
+      {
+        "text": "Elena Rossi wants to run paid ads on Instagram, but the budget is still unknown.",
+        "evidence": [
+          {
+            "sentence_id": "s35",
+            "speaker": "Elena Rossi",
+            "timestamp": "00:02:46",
+            "text": "Should we also run paid ads on Instagram this time?"
+          }
+        ],
+        "grounding": "supported"
+      },
+      {
+        "text": "The internal demo will be held on March 13.",
+        "evidence": [
+          {
+            "sentence_id": "s58",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:04:29",
+            "text": "Let's do the internal demo on March 13."
+          },
+          {
+            "sentence_id": "s57",
+            "speaker": "David Okafor",
+            "timestamp": "00:04:24",
+            "text": "Do we have a date for the internal demo?"
+          }
+        ],
+        "grounding": "supported"
+      }
+    ],
+    "detailed": [
+      {
+        "topic_id": "T1",
+        "title": "Mobile app launch",
+        "sentences": [
+          {
+            "text": "Priya Sharma, Marcus Chen, Elena Rossi and Priya Sharma are meeting to discuss the launch of the mobile app and the marketing campaign.",
+            "evidence": [
+              {
+                "sentence_id": "s3",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:00:05",
+                "text": "The main thing today is the mobile app launch, and then I want to talk about the marketing campaign and the support plan."
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "Engineering found three critical bugs in the payment flow last night.",
+            "evidence": [
+              {
+                "sentence_id": "s6",
+                "speaker": "Marcus Chen",
+                "timestamp": "00:00:21",
+                "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "The checkout crash is on their side and Marcus Chen will fix it by Thursday.",
+            "evidence": [
+              {
+                "sentence_id": "s9",
+                "speaker": "Marcus Chen",
+                "timestamp": "00:00:46",
+                "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "Elena Rossi will contact PayFlow today and ask for an ETA on the SDK.",
+            "evidence": [
+              {
+                "sentence_id": "s11",
+                "speaker": "Elena Rossi",
+                "timestamp": "00:01:05",
+                "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "Marcus will write up the bug details to Elena.",
+            "evidence": [
+              {
+                "sentence_id": "s13",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:01:12",
+                "text": "Marcus, can you also write up the bug details so Elena has something to send them?"
+              }
+            ],
+            "grounding": "supported"
+          }
+        ]
+      },
+      {
+        "topic_id": "T2",
+        "title": "SDK dependency",
+        "sentences": [
+          {
+            "text": "The launch date of Android 9 has been moved to March 17.",
+            "evidence": [
+              {
+                "sentence_id": "s23",
+                "speaker": "Marcus Chen",
+                "timestamp": "00:02:02",
+                "text": "We also agreed last week not to support Android 9 in this release, right?"
+              },
+              {
+                "sentence_id": "s26",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:02:09",
+                "text": "Android 9 is out of scope."
+              }
+            ],
+            "grounding": "weak"
+          },
+          {
+            "text": "If the SDK isn't ready by Friday, they will revisit the date again.",
+            "evidence": [
+              {
+                "sentence_id": "s22",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:01:48",
+                "text": "If the SDK still isn't ready by Friday, we'll revisit the date again."
+              }
+            ],
+            "grounding": "supported"
+          }
+        ]
+      },
+      {
+        "topic_id": "T3",
+        "title": "Landing page copy",
+        "sentences": [
+          {
+            "text": "David Okafor and Priya Sharma are working on the marketing campaign.",
+            "evidence": [
+              {
+                "sentence_id": "s27",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:02:15",
+                "text": "Moving on to the marketing campaign."
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "The landing page copy needs legal review for two weeks.",
+            "evidence": [
+              {
+                "sentence_id": "s30",
+                "speaker": "David Okafor",
+                "timestamp": "00:02:20",
+                "text": "The landing page copy still needs legal review, and that has been slow."
+              },
+              {
+                "sentence_id": "s32",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:02:35",
+                "text": "Can someone follow up with legal about the landing page copy?"
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "Elena Rossi wants to run paid ads on Instagram, but the budget is still unknown.",
+            "evidence": [
+              {
+                "sentence_id": "s35",
+                "speaker": "Elena Rossi",
+                "timestamp": "00:02:46",
+                "text": "Should we also run paid ads on Instagram this time?"
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "Priya and Marcus Chen will figure out the new onboarding screens.",
+            "evidence": [
+              {
+                "sentence_id": "s42",
+                "speaker": "Marcus Chen",
+                "timestamp": "00:03:22",
+                "text": "The designers would know which screens changed, but we don't have anyone assigned yet."
+              },
+              {
+                "sentence_id": "s41",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:03:15",
+                "text": "Someone needs to update the app store screenshots with the new onboarding screens."
+              }
+            ],
+            "grounding": "weak"
+          }
+        ]
+      },
+      {
+        "topic_id": "T4",
+        "title": "Staffing proposal",
+        "sentences": [
+          {
+            "text": "Elena Rossi will draft a staffing proposal for launch week.",
+            "evidence": [
+              {
+                "sentence_id": "s49",
+                "speaker": "Elena Rossi",
+                "timestamp": "00:03:53",
+                "text": "I'll draft a staffing proposal with costs by end of week."
+              },
+              {
+                "sentence_id": "s44",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:03:30",
+                "text": "Last topic: the support plan for launch week."
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and David follows up with legal and writes the press release.",
+            "evidence": [
+              {
+                "sentence_id": "s60",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:04:36",
+                "text": "Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release."
+              }
+            ],
+            "grounding": "supported"
+          },
+          {
+            "text": "The internal demo will be held on March 13.",
+            "evidence": [
+              {
+                "sentence_id": "s58",
+                "speaker": "Priya Sharma",
+                "timestamp": "00:04:29",
+                "text": "Let's do the internal demo on March 13."
+              },
+              {
+                "sentence_id": "s57",
+                "speaker": "David Okafor",
+                "timestamp": "00:04:24",
+                "text": "Do we have a date for the internal demo?"
+              }
+            ],
+            "grounding": "supported"
+          }
+        ]
+      }
+    ],
+    "discussion_points": [
+      {
+        "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed.",
+        "evidence": [
+          {
+            "sentence_id": "s6",
+            "speaker": "Marcus Chen",
+            "timestamp": "00:00:21",
+            "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+          }
+        ]
+      },
+      {
+        "text": "The checkout crash is on our side, and I'll fix it by Thursday.",
+        "evidence": [
+          {
+            "sentence_id": "s9",
+            "speaker": "Marcus Chen",
+            "timestamp": "00:00:46",
+            "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+          }
+        ]
+      },
+      {
+        "text": "I can contact PayFlow today and ask for an ETA on the SDK.",
+        "evidence": [
+          {
+            "sentence_id": "s11",
+            "speaker": "Elena Rossi",
+            "timestamp": "00:01:05",
+            "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+          }
+        ]
+      },
+      {
+        "text": "We decided to move the launch to March 17.",
+        "evidence": [
+          {
+            "sentence_id": "s21",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:01:48",
+            "text": "Alright, we decided to move the launch to March 17."
+          }
+        ]
+      },
+      {
+        "text": "If the SDK still isn't ready by Friday, we'll revisit the date again.",
+        "evidence": [
+          {
+            "sentence_id": "s22",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:01:48",
+            "text": "If the SDK still isn't ready by Friday, we'll revisit the date again."
+          }
+        ]
+      },
+      {
+        "text": "The landing page copy still needs legal review, and that has been slow.",
+        "evidence": [
+          {
+            "sentence_id": "s30",
+            "speaker": "David Okafor",
+            "timestamp": "00:02:20",
+            "text": "The landing page copy still needs legal review, and that has been slow."
+          }
+        ]
+      },
+      {
+        "text": "Let's tentatively plan for organic social only, pending the budget check.",
+        "evidence": [
+          {
+            "sentence_id": "s38",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:03:00",
+            "text": "Let's tentatively plan for organic social only, pending the budget check."
+          }
+        ]
+      },
+      {
+        "text": "Let's figure that out offline.",
+        "evidence": [
+          {
+            "sentence_id": "s43",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:03:30",
+            "text": "Okay, let's figure that out offline."
+          }
+        ]
+      },
+      {
+        "text": "Last topic: the support plan for launch week.",
+        "evidence": [
+          {
+            "sentence_id": "s44",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:03:30",
+            "text": "Last topic: the support plan for launch week."
+          }
+        ]
+      },
+      {
+        "text": "I'll draft a staffing proposal with costs by end of week.",
+        "evidence": [
+          {
+            "sentence_id": "s49",
+            "speaker": "Elena Rossi",
+            "timestamp": "00:03:53",
+            "text": "I'll draft a staffing proposal with costs by end of week."
+          }
+        ]
+      },
+      {
+        "text": "Let's do the internal demo on March 13.",
+        "evidence": [
+          {
+            "sentence_id": "s58",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:04:29",
+            "text": "Let's do the internal demo on March 13."
+          }
+        ]
+      }
+    ],
+    "decision_summary": "4 decisions detected (1 confirmed, 1 tentative, 2 rejected). Key confirmed: We decided to move the launch to March 17.",
+    "follow_up_summary": "12 action items identified, owned by David Okafor, Elena Rossi, Marcus Chen, Priya Sharma. 3 unassigned; 8 with a resolved deadline.",
+    "removed_unsupported": 1
+  },
+  "topics": [
+    {
+      "id": "T1",
+      "title": "Mobile app launch",
+      "keywords": [
+        "PayFlow",
+        "mobile app launch",
+        "vendor SDK update",
+        "critical bugs",
+        "support plan"
+      ],
+      "summary": "Priya Sharma, Marcus Chen, Elena Rossi and Priya Sharma are meeting to discuss the launch of the mobile app and the marketing campaign. Engineering found three critical bugs in the payment flow last night. The checkout crash is on their side and Marcus Chen will fix it by Thursday. Elena Rossi will contact PayFlow today and ask for an ETA on the SDK. Marcus will write up the bug details to Elena.",
+      "key_points": [
+        {
+          "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed.",
+          "evidence": [
+            {
+              "sentence_id": "s6",
+              "speaker": "Marcus Chen",
+              "timestamp": "00:00:21",
+              "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+            }
+          ]
+        },
+        {
+          "text": "The checkout crash is on our side, and I'll fix it by Thursday.",
+          "evidence": [
+            {
+              "sentence_id": "s9",
+              "speaker": "Marcus Chen",
+              "timestamp": "00:00:46",
+              "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+            }
+          ]
+        },
+        {
+          "text": "I can contact PayFlow today and ask for an ETA on the SDK.",
+          "evidence": [
+            {
+              "sentence_id": "s11",
+              "speaker": "Elena Rossi",
+              "timestamp": "00:01:05",
+              "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+            }
+          ]
+        }
+      ],
+      "speakers": [
+        "Priya Sharma",
+        "Marcus Chen",
+        "Elena Rossi"
+      ],
+      "sentence_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12",
+        "s13",
+        "s14"
+      ],
+      "start_timestamp": "00:00:05",
+      "end_timestamp": "00:01:19"
+    },
+    {
+      "id": "T2",
+      "title": "SDK dependency",
+      "keywords": [
+        "SDK dependency",
+        "date",
+        "Android",
+        "full regression",
+        "launch"
+      ],
+      "summary": "The launch date of Android 9 has been moved to March 17. If the SDK isn't ready by Friday, they will revisit the date again.",
+      "key_points": [
+        {
+          "text": "We decided to move the launch to March 17.",
+          "evidence": [
+            {
+              "sentence_id": "s21",
+              "speaker": "Priya Sharma",
+              "timestamp": "00:01:48",
+              "text": "Alright, we decided to move the launch to March 17."
+            }
+          ]
+        },
+        {
+          "text": "If the SDK still isn't ready by Friday, we'll revisit the date again.",
+          "evidence": [
+            {
+              "sentence_id": "s22",
+              "speaker": "Priya Sharma",
+              "timestamp": "00:01:48",
+              "text": "If the SDK still isn't ready by Friday, we'll revisit the date again."
+            }
+          ]
+        }
+      ],
+      "speakers": [
+        "Priya Sharma",
+        "David Okafor",
+        "Elena Rossi",
+        "Marcus Chen"
+      ],
+      "sentence_ids": [
+        "s16",
+        "s17",
+        "s18",
+        "s20",
+        "s21",
+        "s22",
+        "s23",
+        "s24",
+        "s25",
+        "s26"
+      ],
+      "start_timestamp": "00:01:25",
+      "end_timestamp": "00:02:09"
+    },
+    {
+      "id": "T3",
+      "title": "Landing page copy",
+      "keywords": [
+        "landing page copy",
+        "budget",
+        "legal review",
+        "new onboarding screens",
+        "Instagram"
+      ],
+      "summary": "David Okafor and Priya Sharma are working on the marketing campaign. The landing page copy needs legal review for two weeks. Elena Rossi wants to run paid ads on Instagram, but the budget is still unknown. Priya and Marcus Chen will figure out the new onboarding screens.",
+      "key_points": [
+        {
+          "text": "The landing page copy still needs legal review, and that has been slow.",
+          "evidence": [
+            {
+              "sentence_id": "s30",
+              "speaker": "David Okafor",
+              "timestamp": "00:02:20",
+              "text": "The landing page copy still needs legal review, and that has been slow."
+            }
+          ]
+        },
+        {
+          "text": "Let's tentatively plan for organic social only, pending the budget check.",
+          "evidence": [
+            {
+              "sentence_id": "s38",
+              "speaker": "Priya Sharma",
+              "timestamp": "00:03:00",
+              "text": "Let's tentatively plan for organic social only, pending the budget check."
+            }
+          ]
+        },
+        {
+          "text": "Let's figure that out offline.",
+          "evidence": [
+            {
+              "sentence_id": "s43",
+              "speaker": "Priya Sharma",
+              "timestamp": "00:03:30",
+              "text": "Okay, let's figure that out offline."
+            }
+          ]
+        }
+      ],
+      "speakers": [
+        "Priya Sharma",
+        "David Okafor",
+        "Elena Rossi",
+        "Marcus Chen"
+      ],
+      "sentence_ids": [
+        "s27",
+        "s28",
+        "s29",
+        "s30",
+        "s31",
+        "s32",
+        "s33",
+        "s34",
+        "s35",
+        "s36",
+        "s37",
+        "s38",
+        "s39",
+        "s40",
+        "s41",
+        "s42",
+        "s43"
+      ],
+      "start_timestamp": "00:02:15",
+      "end_timestamp": "00:03:30"
+    },
+    {
+      "id": "T4",
+      "title": "Staffing proposal",
+      "keywords": [
+        "staffing proposal",
+        "internal demo",
+        "launch week",
+        "response times",
+        "chatbot vendor"
+      ],
+      "summary": "Elena Rossi will draft a staffing proposal for launch week. Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and David follows up with legal and writes the press release. The internal demo will be held on March 13.",
+      "key_points": [
+        {
+          "text": "Last topic: the support plan for launch week.",
+          "evidence": [
+            {
+              "sentence_id": "s44",
+              "speaker": "Priya Sharma",
+              "timestamp": "00:03:30",
+              "text": "Last topic: the support plan for launch week."
+            }
+          ]
+        },
+        {
+          "text": "I'll draft a staffing proposal with costs by end of week.",
+          "evidence": [
+            {
+              "sentence_id": "s49",
+              "speaker": "Elena Rossi",
+              "timestamp": "00:03:53",
+              "text": "I'll draft a staffing proposal with costs by end of week."
+            }
+          ]
+        },
+        {
+          "text": "Let's do the internal demo on March 13.",
+          "evidence": [
+            {
+              "sentence_id": "s58",
+              "speaker": "Priya Sharma",
+              "timestamp": "00:04:29",
+              "text": "Let's do the internal demo on March 13."
+            }
+          ]
+        }
+      ],
+      "speakers": [
+        "Priya Sharma",
+        "Elena Rossi",
+        "Marcus Chen",
+        "David Okafor"
+      ],
+      "sentence_ids": [
+        "s44",
+        "s45",
+        "s46",
+        "s47",
+        "s49",
+        "s51",
+        "s52",
+        "s54",
+        "s55",
+        "s57",
+        "s58",
+        "s59",
+        "s60",
+        "s61"
+      ],
+      "start_timestamp": "00:03:30",
+      "end_timestamp": "00:04:36"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC1",
+      "text": "We decided to move the launch to March 17.",
+      "status": "confirmed",
+      "kind": "decision",
+      "speaker": "Priya Sharma",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s21",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:48",
+          "text": "Alright, we decided to move the launch to March 17."
+        }
+      ]
+    },
+    {
+      "id": "DEC2",
+      "text": "Android 9 is out of scope.",
+      "status": "rejected",
+      "kind": "decision",
+      "speaker": "Priya Sharma",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s26",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:02:09",
+          "text": "Android 9 is out of scope."
+        }
+      ]
+    },
+    {
+      "id": "DEC3",
+      "text": "Tentatively plan for organic social only, pending the budget check.",
+      "status": "tentative",
+      "kind": "agreement",
+      "speaker": "Priya Sharma",
+      "is_inferred": true,
+      "needs_review": true,
+      "review_reasons": [
+        "Agreed proposal is conditional or provisional."
+      ],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s38",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:03:00",
+          "text": "Let's tentatively plan for organic social only, pending the budget check."
+        },
+        {
+          "sentence_id": "s39",
+          "speaker": "David Okafor",
+          "timestamp": "00:03:07",
+          "text": "Works for me."
+        }
+      ]
+    },
+    {
+      "id": "DEC4",
+      "text": "We decided against using the old chatbot vendor, so the in-app chat will stay disabled at launch.",
+      "status": "rejected",
+      "kind": "decision",
+      "speaker": "Priya Sharma",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s55",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:12",
+          "text": "Also, we decided against using the old chatbot vendor, so the in-app chat will stay disabled at launch."
+        }
+      ]
+    }
+  ],
+  "action_items": [
+    {
+      "id": "A1",
+      "description": "Fix the checkout crash",
+      "owner": "Marcus Chen",
+      "owner_source": "self_commitment",
+      "deadline": {
+        "id": "D-A1",
+        "text": "by Thursday",
+        "normalized_date": "2026-03-05",
+        "date_type": "relative",
+        "granularity": "day",
+        "is_ambiguous": false,
+        "note": null,
+        "related_action_id": "A1",
+        "evidence": [
+          {
+            "sentence_id": "s9",
+            "speaker": "Marcus Chen",
+            "timestamp": "00:00:46",
+            "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+          }
+        ]
+      },
+      "status": "open",
+      "priority": "high",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s9",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:46",
+          "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A2",
+      "description": "Contact PayFlow and ask for an ETA on the SDK",
+      "owner": "Elena Rossi",
+      "owner_source": "self_commitment",
+      "deadline": {
+        "id": "D-A2",
+        "text": "today",
+        "normalized_date": "2026-03-04",
+        "date_type": "relative",
+        "granularity": "day",
+        "is_ambiguous": false,
+        "note": null,
+        "related_action_id": "A2",
+        "evidence": [
+          {
+            "sentence_id": "s11",
+            "speaker": "Elena Rossi",
+            "timestamp": "00:01:05",
+            "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+          }
+        ]
+      },
+      "status": "open",
+      "priority": "high",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s11",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:01:05",
+          "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+        },
+        {
+          "sentence_id": "s12",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:12",
+          "text": "Great, please do."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A3",
+      "description": "Write up the bug details so Elena has something to send them",
+      "owner": "Marcus Chen",
+      "owner_source": "addressed_request",
+      "deadline": {
+        "id": "D-A3",
+        "text": "this afternoon",
+        "normalized_date": "2026-03-04",
+        "date_type": "relative",
+        "granularity": "day",
+        "is_ambiguous": false,
+        "note": null,
+        "related_action_id": "A3",
+        "evidence": [
+          {
+            "sentence_id": "s13",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:01:12",
+            "text": "Marcus, can you also write up the bug details so Elena has something to send them?"
+          },
+          {
+            "sentence_id": "s14",
+            "speaker": "Marcus Chen",
+            "timestamp": "00:01:19",
+            "text": "Sure, I'll have that to Elena this afternoon."
+          }
+        ]
+      },
+      "status": "open",
+      "priority": "high",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s13",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:12",
+          "text": "Marcus, can you also write up the bug details so Elena has something to send them?"
+        },
+        {
+          "sentence_id": "s14",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:01:19",
+          "text": "Sure, I'll have that to Elena this afternoon."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A4",
+      "description": "Follow up with legal about the landing page copy",
+      "owner": "David Okafor",
+      "owner_source": "inferred_from_reply",
+      "deadline": {
+        "id": "D-A4",
+        "text": "tomorrow morning",
+        "normalized_date": "2026-03-05",
+        "date_type": "relative",
+        "granularity": "day",
+        "is_ambiguous": false,
+        "note": null,
+        "related_action_id": "A4",
+        "evidence": [
+          {
+            "sentence_id": "s32",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:02:35",
+            "text": "Can someone follow up with legal about the landing page copy?"
+          },
+          {
+            "sentence_id": "s34",
+            "speaker": "David Okafor",
+            "timestamp": "00:02:40",
+            "text": "I'll ping their team lead tomorrow morning."
+          }
+        ]
+      },
+      "status": "open",
+      "priority": "high",
+      "is_inferred": true,
+      "needs_review": true,
+      "review_reasons": [
+        "Owner inferred from David Okafor's reply."
+      ],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s32",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:02:35",
+          "text": "Can someone follow up with legal about the landing page copy?"
+        },
+        {
+          "sentence_id": "s33",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:40",
+          "text": "I'll take that."
+        },
+        {
+          "sentence_id": "s34",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:40",
+          "text": "I'll ping their team lead tomorrow morning."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A5",
+      "description": "Ping their team lead",
+      "owner": "David Okafor",
+      "owner_source": "self_commitment",
+      "deadline": {
+        "id": "D-A5",
+        "text": "tomorrow morning",
+        "normalized_date": "2026-03-05",
+        "date_type": "relative",
+        "granularity": "day",
+        "is_ambiguous": false,
+        "note": null,
+        "related_action_id": "A5",
+        "evidence": [
+          {
+            "sentence_id": "s34",
+            "speaker": "David Okafor",
+            "timestamp": "00:02:40",
+            "text": "I'll ping their team lead tomorrow morning."
+          }
+        ]
+      },
+      "status": "open",
+      "priority": "high",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s34",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:40",
+          "text": "I'll ping their team lead tomorrow morning."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A6",
+      "description": "Check with finance and get back to you",
+      "owner": "David Okafor",
+      "owner_source": "self_commitment",
+      "deadline": null,
+      "status": "open",
+      "priority": "medium",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s37",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:51",
+          "text": "I need to check with finance and get back to you."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A7",
+      "description": "Prepare the press release draft",
+      "owner": "David Okafor",
+      "owner_source": "self_commitment",
+      "deadline": {
+        "id": "D-A7",
+        "text": "by next Wednesday",
+        "normalized_date": "2026-03-11",
+        "date_type": "relative",
+        "granularity": "day",
+        "is_ambiguous": true,
+        "note": "'next Wednesday' could mean 2026-03-04 or 2026-03-11; interpreted as the Wednesday of next week.",
+        "related_action_id": "A7",
+        "evidence": [
+          {
+            "sentence_id": "s40",
+            "speaker": "David Okafor",
+            "timestamp": "00:03:07",
+            "text": "I'll prepare the press release draft by next Wednesday."
+          }
+        ]
+      },
+      "status": "open",
+      "priority": "medium",
+      "is_inferred": false,
+      "needs_review": true,
+      "review_reasons": [
+        "Deadline 'by next Wednesday' is ambiguous or not a specific day."
+      ],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s40",
+          "speaker": "David Okafor",
+          "timestamp": "00:03:07",
+          "text": "I'll prepare the press release draft by next Wednesday."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A8",
+      "description": "Update the app store screenshots with the new onboarding screens",
+      "owner": "Unassigned",
+      "owner_source": "unassigned",
+      "deadline": null,
+      "status": "open",
+      "priority": "medium",
+      "is_inferred": false,
+      "needs_review": true,
+      "review_reasons": [
+        "Request for a volunteer; nobody clearly accepted it."
+      ],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s41",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:03:15",
+          "text": "Someone needs to update the app store screenshots with the new onboarding screens."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A9",
+      "description": "Draft a staffing proposal with costs",
+      "owner": "Elena Rossi",
+      "owner_source": "self_commitment",
+      "deadline": {
+        "id": "D-A9",
+        "text": "by end of week",
+        "normalized_date": "2026-03-06",
+        "date_type": "relative",
+        "granularity": "day",
+        "is_ambiguous": false,
+        "note": "End of week interpreted as Friday.",
+        "related_action_id": "A9",
+        "evidence": [
+          {
+            "sentence_id": "s49",
+            "speaker": "Elena Rossi",
+            "timestamp": "00:03:53",
+            "text": "I'll draft a staffing proposal with costs by end of week."
+          }
+        ]
+      },
+      "status": "open",
+      "priority": "high",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s49",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:03:53",
+          "text": "I'll draft a staffing proposal with costs by end of week."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A10",
+      "description": "Write the FAQ for the help center",
+      "owner": "Unassigned",
+      "owner_source": "unassigned",
+      "deadline": null,
+      "status": "open",
+      "priority": "medium",
+      "is_inferred": false,
+      "needs_review": true,
+      "review_reasons": [
+        "Request for a volunteer; nobody clearly accepted it."
+      ],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s51",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:00",
+          "text": "And who is going to write the FAQ for the help center?"
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A11",
+      "description": "Do the internal demo",
+      "owner": "Unassigned",
+      "owner_source": "unassigned",
+      "deadline": {
+        "id": "D-A11",
+        "text": "on March 13",
+        "normalized_date": "2026-03-13",
+        "date_type": "explicit",
+        "granularity": "day",
+        "is_ambiguous": false,
+        "note": "Year inferred from the meeting date.",
+        "related_action_id": "A11",
+        "evidence": [
+          {
+            "sentence_id": "s58",
+            "speaker": "Priya Sharma",
+            "timestamp": "00:04:29",
+            "text": "Let's do the internal demo on March 13."
+          }
+        ]
+      },
+      "status": "open",
+      "priority": "medium",
+      "is_inferred": false,
+      "needs_review": true,
+      "review_reasons": [
+        "Collective commitment ('we'/'let's'); no individual owner was named.",
+        "Weak extraction signal."
+      ],
+      "signal": "weak",
+      "evidence": [
+        {
+          "sentence_id": "s58",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:29",
+          "text": "Let's do the internal demo on March 13."
+        }
+      ],
+      "edited": false
+    },
+    {
+      "id": "A12",
+      "description": "Send the calendar invite",
+      "owner": "Priya Sharma",
+      "owner_source": "self_commitment",
+      "deadline": null,
+      "status": "open",
+      "priority": "medium",
+      "is_inferred": false,
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s59",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:29",
+          "text": "I'll send the calendar invite."
+        }
+      ],
+      "edited": false
+    }
+  ],
+  "deadlines": [
+    {
+      "id": "D-A2",
+      "text": "today",
+      "normalized_date": "2026-03-04",
+      "date_type": "relative",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": null,
+      "related_action_id": "A2",
+      "evidence": [
+        {
+          "sentence_id": "s11",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:01:05",
+          "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+        }
+      ]
+    },
+    {
+      "id": "D-A3",
+      "text": "this afternoon",
+      "normalized_date": "2026-03-04",
+      "date_type": "relative",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": null,
+      "related_action_id": "A3",
+      "evidence": [
+        {
+          "sentence_id": "s13",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:12",
+          "text": "Marcus, can you also write up the bug details so Elena has something to send them?"
+        },
+        {
+          "sentence_id": "s14",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:01:19",
+          "text": "Sure, I'll have that to Elena this afternoon."
+        }
+      ]
+    },
+    {
+      "id": "D-A1",
+      "text": "by Thursday",
+      "normalized_date": "2026-03-05",
+      "date_type": "relative",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": null,
+      "related_action_id": "A1",
+      "evidence": [
+        {
+          "sentence_id": "s9",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:46",
+          "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+        }
+      ]
+    },
+    {
+      "id": "D-A4",
+      "text": "tomorrow morning",
+      "normalized_date": "2026-03-05",
+      "date_type": "relative",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": null,
+      "related_action_id": "A4",
+      "evidence": [
+        {
+          "sentence_id": "s32",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:02:35",
+          "text": "Can someone follow up with legal about the landing page copy?"
+        },
+        {
+          "sentence_id": "s34",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:40",
+          "text": "I'll ping their team lead tomorrow morning."
+        }
+      ]
+    },
+    {
+      "id": "D-A5",
+      "text": "tomorrow morning",
+      "normalized_date": "2026-03-05",
+      "date_type": "relative",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": null,
+      "related_action_id": "A5",
+      "evidence": [
+        {
+          "sentence_id": "s34",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:40",
+          "text": "I'll ping their team lead tomorrow morning."
+        }
+      ]
+    },
+    {
+      "id": "D-A9",
+      "text": "by end of week",
+      "normalized_date": "2026-03-06",
+      "date_type": "relative",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": "End of week interpreted as Friday.",
+      "related_action_id": "A9",
+      "evidence": [
+        {
+          "sentence_id": "s49",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:03:53",
+          "text": "I'll draft a staffing proposal with costs by end of week."
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "text": "by Friday",
+      "normalized_date": "2026-03-06",
+      "date_type": "relative",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": null,
+      "related_action_id": null,
+      "evidence": [
+        {
+          "sentence_id": "s22",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:48",
+          "text": "If the SDK still isn't ready by Friday, we'll revisit the date again."
+        }
+      ]
+    },
+    {
+      "id": "D1",
+      "text": "on March 10",
+      "normalized_date": "2026-03-10",
+      "date_type": "explicit",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": "Year inferred from the meeting date.",
+      "related_action_id": null,
+      "evidence": [
+        {
+          "sentence_id": "s6",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:21",
+          "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+        }
+      ]
+    },
+    {
+      "id": "D-A7",
+      "text": "by next Wednesday",
+      "normalized_date": "2026-03-11",
+      "date_type": "relative",
+      "granularity": "day",
+      "is_ambiguous": true,
+      "note": "'next Wednesday' could mean 2026-03-04 or 2026-03-11; interpreted as the Wednesday of next week.",
+      "related_action_id": "A7",
+      "evidence": [
+        {
+          "sentence_id": "s40",
+          "speaker": "David Okafor",
+          "timestamp": "00:03:07",
+          "text": "I'll prepare the press release draft by next Wednesday."
+        }
+      ]
+    },
+    {
+      "id": "D-A11",
+      "text": "on March 13",
+      "normalized_date": "2026-03-13",
+      "date_type": "explicit",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": "Year inferred from the meeting date.",
+      "related_action_id": "A11",
+      "evidence": [
+        {
+          "sentence_id": "s58",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:29",
+          "text": "Let's do the internal demo on March 13."
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "text": "March 17",
+      "normalized_date": "2026-03-17",
+      "date_type": "explicit",
+      "granularity": "day",
+      "is_ambiguous": false,
+      "note": "Year inferred from the meeting date.",
+      "related_action_id": null,
+      "evidence": [
+        {
+          "sentence_id": "s21",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:48",
+          "text": "Alright, we decided to move the launch to March 17."
+        }
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "id": "R1",
+      "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed.",
+      "kind": "blocker",
+      "severity": "high",
+      "speaker": "Marcus Chen",
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s6",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:21",
+          "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "text": "The checkout crash is on our side, and I'll fix it by Thursday.",
+      "kind": "risk",
+      "severity": "medium",
+      "speaker": "Marcus Chen",
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s9",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:46",
+          "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "text": "The other two depend on the vendor SDK update, so we're blocked until PayFlow releases version 4.2.",
+      "kind": "blocker",
+      "severity": "high",
+      "speaker": "Marcus Chen",
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s10",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:46",
+          "text": "The other two depend on the vendor SDK update, so we're blocked until PayFlow releases version 4.2."
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "text": "March 17 gives QA a full regression cycle.",
+      "kind": "risk",
+      "severity": "medium",
+      "speaker": "Elena Rossi",
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s20",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:01:42",
+          "text": "March 17 gives QA a full regression cycle."
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "text": "The landing page copy still needs legal review, and that has been slow.",
+      "kind": "risk",
+      "severity": "medium",
+      "speaker": "David Okafor",
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s30",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:20",
+          "text": "The landing page copy still needs legal review, and that has been slow."
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "text": "The support team is short-staffed that week because two people are on leave, so response times might slip.",
+      "kind": "risk",
+      "severity": "medium",
+      "speaker": "Elena Rossi",
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "strong",
+      "evidence": [
+        {
+          "sentence_id": "s45",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:03:38",
+          "text": "The support team is short-staffed that week because two people are on leave, so response times might slip."
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "text": "Not sure yet, it depends on who has bandwidth after the bug fixes.",
+      "kind": "risk",
+      "severity": "medium",
+      "speaker": "Marcus Chen",
+      "needs_review": false,
+      "review_reasons": [],
+      "signal": "moderate",
+      "evidence": [
+        {
+          "sentence_id": "s52",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:04:06",
+          "text": "Not sure yet, it depends on who has bandwidth after the bug fixes."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "Should we also run paid ads on Instagram this time?",
+      "asked_by": "Elena Rossi",
+      "status": "deferred",
+      "note": "A reply deferred the answer or expressed uncertainty.",
+      "evidence": [
+        {
+          "sentence_id": "s35",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:02:46",
+          "text": "Should we also run paid ads on Instagram this time?"
+        }
+      ],
+      "response_evidence": [
+        {
+          "sentence_id": "s36",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:51",
+          "text": "Maybe, but I'm not sure we have the budget."
+        },
+        {
+          "sentence_id": "s37",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:51",
+          "text": "I need to check with finance and get back to you."
+        }
+      ]
+    },
+    {
+      "id": "Q2",
+      "text": "The designers would know which screens changed, but we don't have anyone assigned yet.",
+      "asked_by": "Marcus Chen",
+      "status": "open_issue",
+      "note": "Stated as an open or undecided issue.",
+      "evidence": [
+        {
+          "sentence_id": "s42",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:03:22",
+          "text": "The designers would know which screens changed, but we don't have anyone assigned yet."
+        }
+      ],
+      "response_evidence": [
+        {
+          "sentence_id": "s43",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:03:30",
+          "text": "Okay, let's figure that out offline."
+        }
+      ]
+    },
+    {
+      "id": "Q3",
+      "text": "Could we bring in contractors for the week?",
+      "asked_by": "Priya Sharma",
+      "status": "deferred",
+      "note": "A reply deferred the answer or expressed uncertainty.",
+      "evidence": [
+        {
+          "sentence_id": "s47",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:03:47",
+          "text": "Could we bring in contractors for the week?"
+        }
+      ],
+      "response_evidence": [
+        {
+          "sentence_id": "s48",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:03:53",
+          "text": "Possibly."
+        },
+        {
+          "sentence_id": "s52",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:04:06",
+          "text": "Not sure yet, it depends on who has bandwidth after the bug fixes."
+        }
+      ]
+    },
+    {
+      "id": "Q4",
+      "text": "Who is going to write the FAQ for the help center?",
+      "asked_by": "Priya Sharma",
+      "status": "deferred",
+      "note": "A reply deferred the answer or expressed uncertainty.",
+      "evidence": [
+        {
+          "sentence_id": "s51",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:00",
+          "text": "And who is going to write the FAQ for the help center?"
+        }
+      ],
+      "response_evidence": [
+        {
+          "sentence_id": "s52",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:04:06",
+          "text": "Not sure yet, it depends on who has bandwidth after the bug fixes."
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "text": "Elena Rossi",
+      "label": "PERSON",
+      "label_description": "People",
+      "count": 3,
+      "source": "ner+speaker_label",
+      "evidence": [
+        {
+          "sentence_id": "s13",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:12",
+          "text": "Marcus, can you also write up the bug details so Elena has something to send them?"
+        },
+        {
+          "sentence_id": "s14",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:01:19",
+          "text": "Sure, I'll have that to Elena this afternoon."
+        },
+        {
+          "sentence_id": "s60",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:36",
+          "text": "Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release."
+        }
+      ]
+    },
+    {
+      "text": "David Okafor",
+      "label": "PERSON",
+      "label_description": "People",
+      "count": 2,
+      "source": "ner+speaker_label",
+      "evidence": [
+        {
+          "sentence_id": "s28",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:02:15",
+          "text": "David, where are we?"
+        },
+        {
+          "sentence_id": "s60",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:36",
+          "text": "Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release."
+        }
+      ]
+    },
+    {
+      "text": "Marcus Chen",
+      "label": "PERSON",
+      "label_description": "People",
+      "count": 2,
+      "source": "ner+speaker_label",
+      "evidence": [
+        {
+          "sentence_id": "s13",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:12",
+          "text": "Marcus, can you also write up the bug details so Elena has something to send them?"
+        },
+        {
+          "sentence_id": "s60",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:36",
+          "text": "Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release."
+        }
+      ]
+    },
+    {
+      "text": "Priya Sharma",
+      "label": "PERSON",
+      "label_description": "People",
+      "count": 0,
+      "source": "speaker_label",
+      "evidence": [
+        {
+          "sentence_id": "s1",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:00:05",
+          "text": "Okay, let's get started."
+        }
+      ]
+    },
+    {
+      "text": "PayFlow",
+      "label": "ORG",
+      "label_description": "Organizations",
+      "count": 3,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s10",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:46",
+          "text": "The other two depend on the vendor SDK update, so we're blocked until PayFlow releases version 4.2."
+        },
+        {
+          "sentence_id": "s11",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:01:05",
+          "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+        },
+        {
+          "sentence_id": "s60",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:36",
+          "text": "Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release."
+        }
+      ]
+    },
+    {
+      "text": "Android",
+      "label": "ORG",
+      "label_description": "Organizations",
+      "count": 2,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s23",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:02:02",
+          "text": "We also agreed last week not to support Android 9 in this release, right?"
+        },
+        {
+          "sentence_id": "s26",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:02:09",
+          "text": "Android 9 is out of scope."
+        }
+      ]
+    },
+    {
+      "text": "Instagram",
+      "label": "ORG",
+      "label_description": "Organizations",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s35",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:02:46",
+          "text": "Should we also run paid ads on Instagram this time?"
+        }
+      ]
+    },
+    {
+      "text": "March 17",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 4,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s17",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:25",
+          "text": "What does everyone think about March 17?"
+        },
+        {
+          "sentence_id": "s18",
+          "speaker": "David Okafor",
+          "timestamp": "00:01:36",
+          "text": "Honestly, I'd prefer not to delay, but March 17 is safer."
+        },
+        {
+          "sentence_id": "s20",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:01:42",
+          "text": "March 17 gives QA a full regression cycle."
+        },
+        {
+          "sentence_id": "s21",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:48",
+          "text": "Alright, we decided to move the launch to March 17."
+        }
+      ]
+    },
+    {
+      "text": "Thursday",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 2,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s9",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:46",
+          "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+        },
+        {
+          "sentence_id": "s60",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:36",
+          "text": "Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release."
+        }
+      ]
+    },
+    {
+      "text": "end of week",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s49",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:03:53",
+          "text": "I'll draft a staffing proposal with costs by end of week."
+        }
+      ]
+    },
+    {
+      "text": "Friday",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s22",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:48",
+          "text": "If the SDK still isn't ready by Friday, we'll revisit the date again."
+        }
+      ]
+    },
+    {
+      "text": "March 10",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s6",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:21",
+          "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+        }
+      ]
+    },
+    {
+      "text": "March 13",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s58",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:29",
+          "text": "Let's do the internal demo on March 13."
+        }
+      ]
+    },
+    {
+      "text": "next Monday",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s61",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:36",
+          "text": "Let's have a follow-up sync next Monday to check on the SDK."
+        }
+      ]
+    },
+    {
+      "text": "next Wednesday",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s40",
+          "speaker": "David Okafor",
+          "timestamp": "00:03:07",
+          "text": "I'll prepare the press release draft by next Wednesday."
+        }
+      ]
+    },
+    {
+      "text": "tomorrow",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s34",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:40",
+          "text": "I'll ping their team lead tomorrow morning."
+        }
+      ]
+    },
+    {
+      "text": "two weeks",
+      "label": "DATE",
+      "label_description": "Dates",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s31",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:20",
+          "text": "Legal has had it for two weeks."
+        }
+      ]
+    },
+    {
+      "text": "about eighty percent",
+      "label": "PERCENT",
+      "label_description": "Percentages",
+      "count": 1,
+      "source": "ner",
+      "evidence": [
+        {
+          "sentence_id": "s29",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:20",
+          "text": "The campaign assets are about eighty percent done."
+        }
+      ]
+    }
+  ],
+  "people": [
+    {
+      "name": "Priya Sharma",
+      "is_speaker": true,
+      "utterances": 16,
+      "words": 274,
+      "talk_share": 50.6,
+      "mentions": 0,
+      "action_items": 1
+    },
+    {
+      "name": "Marcus Chen",
+      "is_speaker": true,
+      "utterances": 6,
+      "words": 113,
+      "talk_share": 20.9,
+      "mentions": 2,
+      "action_items": 2
+    },
+    {
+      "name": "Elena Rossi",
+      "is_speaker": true,
+      "utterances": 5,
+      "words": 62,
+      "talk_share": 11.5,
+      "mentions": 3,
+      "action_items": 2
+    },
+    {
+      "name": "David Okafor",
+      "is_speaker": true,
+      "utterances": 6,
+      "words": 92,
+      "talk_share": 17.0,
+      "mentions": 2,
+      "action_items": 4
+    }
+  ],
+  "keywords": [
+    {
+      "phrase": "PayFlow",
+      "rank": 1,
+      "mentions": 3
+    },
+    {
+      "phrase": "launch",
+      "rank": 2,
+      "mentions": 5
+    },
+    {
+      "phrase": "vendor SDK update",
+      "rank": 3,
+      "mentions": 1
+    },
+    {
+      "phrase": "support plan",
+      "rank": 4,
+      "mentions": 2
+    },
+    {
+      "phrase": "checkout crash",
+      "rank": 5,
+      "mentions": 2
+    },
+    {
+      "phrase": "page copy",
+      "rank": 6,
+      "mentions": 2
+    },
+    {
+      "phrase": "legal",
+      "rank": 7,
+      "mentions": 4
+    },
+    {
+      "phrase": "full regression cycle",
+      "rank": 8,
+      "mentions": 1
+    },
+    {
+      "phrase": "draft",
+      "rank": 9,
+      "mentions": 2
+    },
+    {
+      "phrase": "bug",
+      "rank": 10,
+      "mentions": 2
+    },
+    {
+      "phrase": "app store screenshots",
+      "rank": 11,
+      "mentions": 1
+    },
+    {
+      "phrase": "Android",
+      "rank": 12,
+      "mentions": 2
+    },
+    {
+      "phrase": "budget",
+      "rank": 13,
+      "mentions": 2
+    },
+    {
+      "phrase": "press release",
+      "rank": 14,
+      "mentions": 2
+    },
+    {
+      "phrase": "marketing campaign",
+      "rank": 15,
+      "mentions": 2
+    }
+  ],
+  "next_steps": [
+    {
+      "id": "N1",
+      "text": "Resolve the blocker: QA found three critical bugs in the payment flow last night, and I'm worried we can't…",
+      "rationale": "Raised as a blocker in the meeting; dependent work cannot progress until it is cleared.",
+      "priority": "high",
+      "category": "blocker",
+      "related_ids": [
+        "R1"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s6",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:21",
+          "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+        }
+      ]
+    },
+    {
+      "id": "N2",
+      "text": "Resolve the blocker: The other two depend on the vendor SDK update, so we're blocked until PayFlow releases…",
+      "rationale": "Raised as a blocker in the meeting; dependent work cannot progress until it is cleared.",
+      "priority": "high",
+      "category": "blocker",
+      "related_ids": [
+        "R3"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s10",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:00:46",
+          "text": "The other two depend on the vendor SDK update, so we're blocked until PayFlow releases version 4.2."
+        }
+      ]
+    },
+    {
+      "id": "N3",
+      "text": "Prioritise “Contact PayFlow and ask for an ETA on the SDK” — the earliest deadline (2026-03-04, today)",
+      "rationale": "Earliest resolved deadline among the action items.",
+      "priority": "high",
+      "category": "deadline",
+      "related_ids": [
+        "A2"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s11",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:01:05",
+          "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+        },
+        {
+          "sentence_id": "s12",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:01:12",
+          "text": "Great, please do."
+        }
+      ]
+    },
+    {
+      "id": "N4",
+      "text": "Assign an owner and a deadline for “Update the app store screenshots with the new onboarding screens”",
+      "rationale": "The task was raised but no one was clearly named or volunteered, and no due date was given.",
+      "priority": "medium",
+      "category": "ownership",
+      "related_ids": [
+        "A8"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s41",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:03:15",
+          "text": "Someone needs to update the app store screenshots with the new onboarding screens."
+        }
+      ]
+    },
+    {
+      "id": "N5",
+      "text": "Assign an owner and a deadline for “Write the FAQ for the help center”",
+      "rationale": "The task was raised but no one was clearly named or volunteered, and no due date was given.",
+      "priority": "medium",
+      "category": "ownership",
+      "related_ids": [
+        "A10"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s51",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:00",
+          "text": "And who is going to write the FAQ for the help center?"
+        }
+      ]
+    },
+    {
+      "id": "N6",
+      "text": "Assign an owner for “Do the internal demo”",
+      "rationale": "The task was raised but no one was clearly named or volunteered.",
+      "priority": "medium",
+      "category": "ownership",
+      "related_ids": [
+        "A11"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s58",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:29",
+          "text": "Let's do the internal demo on March 13."
+        }
+      ]
+    },
+    {
+      "id": "N7",
+      "text": "Agree a deadline for “Check with finance and get back to you” with David Okafor",
+      "rationale": "No due date was mentioned for this task.",
+      "priority": "medium",
+      "category": "deadline",
+      "related_ids": [
+        "A6"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s37",
+          "speaker": "David Okafor",
+          "timestamp": "00:02:51",
+          "text": "I need to check with finance and get back to you."
+        }
+      ]
+    },
+    {
+      "id": "N8",
+      "text": "Confirm the exact date for “Prepare the press release draft” (said: “by next Wednesday”)",
+      "rationale": "'next Wednesday' could mean 2026-03-04 or 2026-03-11; interpreted as the Wednesday of next week.",
+      "priority": "medium",
+      "category": "deadline",
+      "related_ids": [
+        "A7"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s40",
+          "speaker": "David Okafor",
+          "timestamp": "00:03:07",
+          "text": "I'll prepare the press release draft by next Wednesday."
+        }
+      ]
+    },
+    {
+      "id": "N9",
+      "text": "Agree a deadline for “Send the calendar invite” with Priya Sharma",
+      "rationale": "No due date was mentioned for this task.",
+      "priority": "medium",
+      "category": "deadline",
+      "related_ids": [
+        "A12"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s59",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:29",
+          "text": "I'll send the calendar invite."
+        }
+      ]
+    },
+    {
+      "id": "N10",
+      "text": "Confirm the tentative decision: Tentatively plan for organic social only, pending the budget check",
+      "rationale": "This decision was provisional or conditional in the meeting.",
+      "priority": "medium",
+      "category": "decision",
+      "related_ids": [
+        "DEC3"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s38",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:03:00",
+          "text": "Let's tentatively plan for organic social only, pending the budget check."
+        },
+        {
+          "sentence_id": "s39",
+          "speaker": "David Okafor",
+          "timestamp": "00:03:07",
+          "text": "Works for me."
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "text": "Get an answer to: Should we also run paid ads on Instagram this time?",
+      "rationale": "Deferred during the meeting.",
+      "priority": "medium",
+      "category": "question",
+      "related_ids": [
+        "Q1"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s35",
+          "speaker": "Elena Rossi",
+          "timestamp": "00:02:46",
+          "text": "Should we also run paid ads on Instagram this time?"
+        }
+      ]
+    },
+    {
+      "id": "N12",
+      "text": "Get an answer to: The designers would know which screens changed, but we don't have anyone assigned yet",
+      "rationale": "Raised in the meeting without a clear answer.",
+      "priority": "medium",
+      "category": "question",
+      "related_ids": [
+        "Q2"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s42",
+          "speaker": "Marcus Chen",
+          "timestamp": "00:03:22",
+          "text": "The designers would know which screens changed, but we don't have anyone assigned yet."
+        }
+      ]
+    },
+    {
+      "id": "N13",
+      "text": "Get an answer to: Could we bring in contractors for the week?",
+      "rationale": "Deferred during the meeting.",
+      "priority": "medium",
+      "category": "question",
+      "related_ids": [
+        "Q3"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s47",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:03:47",
+          "text": "Could we bring in contractors for the week?"
+        }
+      ]
+    },
+    {
+      "id": "N14",
+      "text": "Get an answer to: Who is going to write the FAQ for the help center?",
+      "rationale": "Deferred during the meeting.",
+      "priority": "medium",
+      "category": "question",
+      "related_ids": [
+        "Q4"
+      ],
+      "evidence": [
+        {
+          "sentence_id": "s51",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:00",
+          "text": "And who is going to write the FAQ for the help center?"
+        }
+      ]
+    },
+    {
+      "id": "N15",
+      "text": "Schedule the follow-up meeting that was mentioned",
+      "rationale": "A follow-up meeting or check-in was referred to in the discussion.",
+      "priority": "low",
+      "category": "meeting",
+      "related_ids": [],
+      "evidence": [
+        {
+          "sentence_id": "s61",
+          "speaker": "Priya Sharma",
+          "timestamp": "00:04:36",
+          "text": "Let's have a follow-up sync next Monday to check on the SDK."
+        }
+      ]
+    }
+  ],
+  "utterances": [
+    {
+      "id": "u1",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:00:05",
+      "text": "Okay, let's get started. Thanks everyone for joining. The main thing today is the mobile app launch, and then I want to talk about the marketing campaign and the support plan.",
+      "sentence_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "u2",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:00:21",
+      "text": "Sounds good. So, quick status from engineering. QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed.",
+      "sentence_ids": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "id": "u3",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:00:40",
+      "text": "That's a real risk. What's the root cause?",
+      "sentence_ids": [
+        "s7",
+        "s8"
+      ]
+    },
+    {
+      "id": "u4",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:00:46",
+      "text": "The checkout crash is on our side, and I'll fix it by Thursday. The other two depend on the vendor SDK update, so we're blocked until PayFlow releases version 4.2.",
+      "sentence_ids": [
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "id": "u5",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:01:05",
+      "text": "I can contact PayFlow today and ask for an ETA on the SDK.",
+      "sentence_ids": [
+        "s11"
+      ]
+    },
+    {
+      "id": "u6",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:12",
+      "text": "Great, please do. Marcus, can you also write up the bug details so Elena has something to send them?",
+      "sentence_ids": [
+        "s12",
+        "s13"
+      ]
+    },
+    {
+      "id": "u7",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:01:19",
+      "text": "Sure, I'll have that to Elena this afternoon.",
+      "sentence_ids": [
+        "s14"
+      ]
+    },
+    {
+      "id": "u8",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:25",
+      "text": "Okay. Given the SDK dependency, I think we should move the launch date. What does everyone think about March 17?",
+      "sentence_ids": [
+        "s15",
+        "s16",
+        "s17"
+      ]
+    },
+    {
+      "id": "u9",
+      "speaker": "David Okafor",
+      "timestamp": "00:01:36",
+      "text": "Honestly, I'd prefer not to delay, but March 17 is safer.",
+      "sentence_ids": [
+        "s18"
+      ]
+    },
+    {
+      "id": "u10",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:01:42",
+      "text": "Agreed. March 17 gives QA a full regression cycle.",
+      "sentence_ids": [
+        "s19",
+        "s20"
+      ]
+    },
+    {
+      "id": "u11",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:48",
+      "text": "Alright, we decided to move the launch to March 17. If the SDK still isn't ready by Friday, we'll revisit the date again.",
+      "sentence_ids": [
+        "s21",
+        "s22"
+      ]
+    },
+    {
+      "id": "u12",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:02:02",
+      "text": "We also agreed last week not to support Android 9 in this release, right? Let's keep that.",
+      "sentence_ids": [
+        "s23",
+        "s24"
+      ]
+    },
+    {
+      "id": "u13",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:02:09",
+      "text": "Yes, that's confirmed. Android 9 is out of scope.",
+      "sentence_ids": [
+        "s25",
+        "s26"
+      ]
+    },
+    {
+      "id": "u14",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:02:15",
+      "text": "Moving on to the marketing campaign. David, where are we?",
+      "sentence_ids": [
+        "s27",
+        "s28"
+      ]
+    },
+    {
+      "id": "u15",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:20",
+      "text": "The campaign assets are about eighty percent done. The landing page copy still needs legal review, and that has been slow. Legal has had it for two weeks.",
+      "sentence_ids": [
+        "s29",
+        "s30",
+        "s31"
+      ]
+    },
+    {
+      "id": "u16",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:02:35",
+      "text": "Can someone follow up with legal about the landing page copy?",
+      "sentence_ids": [
+        "s32"
+      ]
+    },
+    {
+      "id": "u17",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:40",
+      "text": "I'll take that. I'll ping their team lead tomorrow morning.",
+      "sentence_ids": [
+        "s33",
+        "s34"
+      ]
+    },
+    {
+      "id": "u18",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:02:46",
+      "text": "Should we also run paid ads on Instagram this time?",
+      "sentence_ids": [
+        "s35"
+      ]
+    },
+    {
+      "id": "u19",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:51",
+      "text": "Maybe, but I'm not sure we have the budget. I need to check with finance and get back to you.",
+      "sentence_ids": [
+        "s36",
+        "s37"
+      ]
+    },
+    {
+      "id": "u20",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:00",
+      "text": "Let's tentatively plan for organic social only, pending the budget check.",
+      "sentence_ids": [
+        "s38"
+      ]
+    },
+    {
+      "id": "u21",
+      "speaker": "David Okafor",
+      "timestamp": "00:03:07",
+      "text": "Works for me. I'll prepare the press release draft by next Wednesday.",
+      "sentence_ids": [
+        "s39",
+        "s40"
+      ]
+    },
+    {
+      "id": "u22",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:15",
+      "text": "Someone needs to update the app store screenshots with the new onboarding screens.",
+      "sentence_ids": [
+        "s41"
+      ]
+    },
+    {
+      "id": "u23",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:03:22",
+      "text": "The designers would know which screens changed, but we don't have anyone assigned yet.",
+      "sentence_ids": [
+        "s42"
+      ]
+    },
+    {
+      "id": "u24",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:30",
+      "text": "Okay, let's figure that out offline. Last topic: the support plan for launch week.",
+      "sentence_ids": [
+        "s43",
+        "s44"
+      ]
+    },
+    {
+      "id": "u25",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:03:38",
+      "text": "The support team is short-staffed that week because two people are on leave, so response times might slip.",
+      "sentence_ids": [
+        "s45"
+      ]
+    },
+    {
+      "id": "u26",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:47",
+      "text": "That's a concern. Could we bring in contractors for the week?",
+      "sentence_ids": [
+        "s46",
+        "s47"
+      ]
+    },
+    {
+      "id": "u27",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:03:53",
+      "text": "Possibly. I'll draft a staffing proposal with costs by end of week.",
+      "sentence_ids": [
+        "s48",
+        "s49"
+      ]
+    },
+    {
+      "id": "u28",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:00",
+      "text": "Good. And who is going to write the FAQ for the help center?",
+      "sentence_ids": [
+        "s50",
+        "s51"
+      ]
+    },
+    {
+      "id": "u29",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:04:06",
+      "text": "Not sure yet, it depends on who has bandwidth after the bug fixes.",
+      "sentence_ids": [
+        "s52"
+      ]
+    },
+    {
+      "id": "u30",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:12",
+      "text": "Fine. We'll leave that open for now. Also, we decided against using the old chatbot vendor, so the in-app chat will stay disabled at launch.",
+      "sentence_ids": [
+        "s53",
+        "s54",
+        "s55"
+      ]
+    },
+    {
+      "id": "u31",
+      "speaker": "David Okafor",
+      "timestamp": "00:04:24",
+      "text": "Makes sense. Do we have a date for the internal demo?",
+      "sentence_ids": [
+        "s56",
+        "s57"
+      ]
+    },
+    {
+      "id": "u32",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:29",
+      "text": "Let's do the internal demo on March 13. I'll send the calendar invite.",
+      "sentence_ids": [
+        "s58",
+        "s59"
+      ]
+    },
+    {
+      "id": "u33",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:36",
+      "text": "Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release. Let's have a follow-up sync next Monday to check on the SDK. Thanks everyone.",
+      "sentence_ids": [
+        "s60",
+        "s61",
+        "s62"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s1",
+      "utterance_id": "u1",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:00:05",
+      "text": "Okay, let's get started."
+    },
+    {
+      "id": "s2",
+      "utterance_id": "u1",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:00:05",
+      "text": "Thanks everyone for joining."
+    },
+    {
+      "id": "s3",
+      "utterance_id": "u1",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:00:05",
+      "text": "The main thing today is the mobile app launch, and then I want to talk about the marketing campaign and the support plan."
+    },
+    {
+      "id": "s4",
+      "utterance_id": "u2",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:00:21",
+      "text": "Sounds good."
+    },
+    {
+      "id": "s5",
+      "utterance_id": "u2",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:00:21",
+      "text": "So, quick status from engineering."
+    },
+    {
+      "id": "s6",
+      "utterance_id": "u2",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:00:21",
+      "text": "QA found three critical bugs in the payment flow last night, and I'm worried we can't ship on March 10 if they're not fixed."
+    },
+    {
+      "id": "s7",
+      "utterance_id": "u3",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:00:40",
+      "text": "That's a real risk."
+    },
+    {
+      "id": "s8",
+      "utterance_id": "u3",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:00:40",
+      "text": "What's the root cause?"
+    },
+    {
+      "id": "s9",
+      "utterance_id": "u4",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:00:46",
+      "text": "The checkout crash is on our side, and I'll fix it by Thursday."
+    },
+    {
+      "id": "s10",
+      "utterance_id": "u4",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:00:46",
+      "text": "The other two depend on the vendor SDK update, so we're blocked until PayFlow releases version 4.2."
+    },
+    {
+      "id": "s11",
+      "utterance_id": "u5",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:01:05",
+      "text": "I can contact PayFlow today and ask for an ETA on the SDK."
+    },
+    {
+      "id": "s12",
+      "utterance_id": "u6",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:12",
+      "text": "Great, please do."
+    },
+    {
+      "id": "s13",
+      "utterance_id": "u6",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:12",
+      "text": "Marcus, can you also write up the bug details so Elena has something to send them?"
+    },
+    {
+      "id": "s14",
+      "utterance_id": "u7",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:01:19",
+      "text": "Sure, I'll have that to Elena this afternoon."
+    },
+    {
+      "id": "s15",
+      "utterance_id": "u8",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:25",
+      "text": "Okay."
+    },
+    {
+      "id": "s16",
+      "utterance_id": "u8",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:25",
+      "text": "Given the SDK dependency, I think we should move the launch date."
+    },
+    {
+      "id": "s17",
+      "utterance_id": "u8",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:25",
+      "text": "What does everyone think about March 17?"
+    },
+    {
+      "id": "s18",
+      "utterance_id": "u9",
+      "speaker": "David Okafor",
+      "timestamp": "00:01:36",
+      "text": "Honestly, I'd prefer not to delay, but March 17 is safer."
+    },
+    {
+      "id": "s19",
+      "utterance_id": "u10",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:01:42",
+      "text": "Agreed."
+    },
+    {
+      "id": "s20",
+      "utterance_id": "u10",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:01:42",
+      "text": "March 17 gives QA a full regression cycle."
+    },
+    {
+      "id": "s21",
+      "utterance_id": "u11",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:48",
+      "text": "Alright, we decided to move the launch to March 17."
+    },
+    {
+      "id": "s22",
+      "utterance_id": "u11",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:01:48",
+      "text": "If the SDK still isn't ready by Friday, we'll revisit the date again."
+    },
+    {
+      "id": "s23",
+      "utterance_id": "u12",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:02:02",
+      "text": "We also agreed last week not to support Android 9 in this release, right?"
+    },
+    {
+      "id": "s24",
+      "utterance_id": "u12",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:02:02",
+      "text": "Let's keep that."
+    },
+    {
+      "id": "s25",
+      "utterance_id": "u13",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:02:09",
+      "text": "Yes, that's confirmed."
+    },
+    {
+      "id": "s26",
+      "utterance_id": "u13",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:02:09",
+      "text": "Android 9 is out of scope."
+    },
+    {
+      "id": "s27",
+      "utterance_id": "u14",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:02:15",
+      "text": "Moving on to the marketing campaign."
+    },
+    {
+      "id": "s28",
+      "utterance_id": "u14",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:02:15",
+      "text": "David, where are we?"
+    },
+    {
+      "id": "s29",
+      "utterance_id": "u15",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:20",
+      "text": "The campaign assets are about eighty percent done."
+    },
+    {
+      "id": "s30",
+      "utterance_id": "u15",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:20",
+      "text": "The landing page copy still needs legal review, and that has been slow."
+    },
+    {
+      "id": "s31",
+      "utterance_id": "u15",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:20",
+      "text": "Legal has had it for two weeks."
+    },
+    {
+      "id": "s32",
+      "utterance_id": "u16",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:02:35",
+      "text": "Can someone follow up with legal about the landing page copy?"
+    },
+    {
+      "id": "s33",
+      "utterance_id": "u17",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:40",
+      "text": "I'll take that."
+    },
+    {
+      "id": "s34",
+      "utterance_id": "u17",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:40",
+      "text": "I'll ping their team lead tomorrow morning."
+    },
+    {
+      "id": "s35",
+      "utterance_id": "u18",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:02:46",
+      "text": "Should we also run paid ads on Instagram this time?"
+    },
+    {
+      "id": "s36",
+      "utterance_id": "u19",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:51",
+      "text": "Maybe, but I'm not sure we have the budget."
+    },
+    {
+      "id": "s37",
+      "utterance_id": "u19",
+      "speaker": "David Okafor",
+      "timestamp": "00:02:51",
+      "text": "I need to check with finance and get back to you."
+    },
+    {
+      "id": "s38",
+      "utterance_id": "u20",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:00",
+      "text": "Let's tentatively plan for organic social only, pending the budget check."
+    },
+    {
+      "id": "s39",
+      "utterance_id": "u21",
+      "speaker": "David Okafor",
+      "timestamp": "00:03:07",
+      "text": "Works for me."
+    },
+    {
+      "id": "s40",
+      "utterance_id": "u21",
+      "speaker": "David Okafor",
+      "timestamp": "00:03:07",
+      "text": "I'll prepare the press release draft by next Wednesday."
+    },
+    {
+      "id": "s41",
+      "utterance_id": "u22",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:15",
+      "text": "Someone needs to update the app store screenshots with the new onboarding screens."
+    },
+    {
+      "id": "s42",
+      "utterance_id": "u23",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:03:22",
+      "text": "The designers would know which screens changed, but we don't have anyone assigned yet."
+    },
+    {
+      "id": "s43",
+      "utterance_id": "u24",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:30",
+      "text": "Okay, let's figure that out offline."
+    },
+    {
+      "id": "s44",
+      "utterance_id": "u24",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:30",
+      "text": "Last topic: the support plan for launch week."
+    },
+    {
+      "id": "s45",
+      "utterance_id": "u25",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:03:38",
+      "text": "The support team is short-staffed that week because two people are on leave, so response times might slip."
+    },
+    {
+      "id": "s46",
+      "utterance_id": "u26",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:47",
+      "text": "That's a concern."
+    },
+    {
+      "id": "s47",
+      "utterance_id": "u26",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:03:47",
+      "text": "Could we bring in contractors for the week?"
+    },
+    {
+      "id": "s48",
+      "utterance_id": "u27",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:03:53",
+      "text": "Possibly."
+    },
+    {
+      "id": "s49",
+      "utterance_id": "u27",
+      "speaker": "Elena Rossi",
+      "timestamp": "00:03:53",
+      "text": "I'll draft a staffing proposal with costs by end of week."
+    },
+    {
+      "id": "s50",
+      "utterance_id": "u28",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:00",
+      "text": "Good."
+    },
+    {
+      "id": "s51",
+      "utterance_id": "u28",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:00",
+      "text": "And who is going to write the FAQ for the help center?"
+    },
+    {
+      "id": "s52",
+      "utterance_id": "u29",
+      "speaker": "Marcus Chen",
+      "timestamp": "00:04:06",
+      "text": "Not sure yet, it depends on who has bandwidth after the bug fixes."
+    },
+    {
+      "id": "s53",
+      "utterance_id": "u30",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:12",
+      "text": "Fine."
+    },
+    {
+      "id": "s54",
+      "utterance_id": "u30",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:12",
+      "text": "We'll leave that open for now."
+    },
+    {
+      "id": "s55",
+      "utterance_id": "u30",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:12",
+      "text": "Also, we decided against using the old chatbot vendor, so the in-app chat will stay disabled at launch."
+    },
+    {
+      "id": "s56",
+      "utterance_id": "u31",
+      "speaker": "David Okafor",
+      "timestamp": "00:04:24",
+      "text": "Makes sense."
+    },
+    {
+      "id": "s57",
+      "utterance_id": "u31",
+      "speaker": "David Okafor",
+      "timestamp": "00:04:24",
+      "text": "Do we have a date for the internal demo?"
+    },
+    {
+      "id": "s58",
+      "utterance_id": "u32",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:29",
+      "text": "Let's do the internal demo on March 13."
+    },
+    {
+      "id": "s59",
+      "utterance_id": "u32",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:29",
+      "text": "I'll send the calendar invite."
+    },
+    {
+      "id": "s60",
+      "utterance_id": "u33",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:36",
+      "text": "Okay, to recap: Marcus fixes the checkout crash by Thursday, Elena contacts PayFlow today and drafts the staffing proposal, David follows up with legal and writes the press release."
+    },
+    {
+      "id": "s61",
+      "utterance_id": "u33",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:36",
+      "text": "Let's have a follow-up sync next Monday to check on the SDK."
+    },
+    {
+      "id": "s62",
+      "utterance_id": "u33",
+      "speaker": "Priya Sharma",
+      "timestamp": "00:04:36",
+      "text": "Thanks everyone."
+    }
+  ],
+  "warnings": [
+    "1 generated summary sentence(s) were removed because they were not supported by the transcript."
+  ],
+  "models": {
+    "summarizer": "philschmid/distilbart-cnn-12-6-samsum",
+    "embeddings": "sentence-transformers/all-MiniLM-L6-v2",
+    "spacy": "en_core_web_sm",
+    "keywords": "YAKE + embedding MMR re-ranking",
+    "fallbacks": []
+  },
+  "timings_ms": {
+    "models": 8937.8,
+    "preprocess": 142.1,
+    "entities": 0.6,
+    "topics": 803.6,
+    "actions": 333.8,
+    "decisions": 65.9,
+    "risks": 29.5,
+    "questions": 1.0,
+    "summary": 25459.3,
+    "next_steps": 0.5,
+    "finalize": 4.6
+  }
+}

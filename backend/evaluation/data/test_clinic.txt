@@ -1,0 +1,24 @@
+Meeting: Outpatient Clinic Operations
+Date: 2026-02-09
+
+Dr. Ellis: Let's begin. Waiting times in the morning clinic are up to 55 minutes on average.
+Nurse Kowalski: The main issue is that we're down two nurses since January, and the agency staff keep cancelling.
+Dr. Ellis: That's not sustainable. We approved the budget for one additional permanent nurse last week.
+Ms. Haddad: HR said the job posting can go live once the description is finalised.
+Dr. Ellis: Nurse Kowalski, could you finalise the job description by Wednesday?
+Nurse Kowalski: Yes, I'll send it to HR on Wednesday.
+Ms. Haddad: The new check-in kiosks arrived, but IT hasn't installed them yet.
+Dr. Ellis: Why is that taking so long?
+Ms. Haddad: They're waiting for the network security review, so the kiosks are stuck in storage.
+Dr. Ellis: I'll call the IT director today and ask for a date.
+Mr. Osei: We should consider extending the evening clinic to 8pm to spread the load.
+Dr. Ellis: Maybe, but we'd need consultant cover. Let's look at the rota data first.
+Mr. Osei: I can pull the rota data for the last three months.
+Dr. Ellis: Thanks, have that ready for the next meeting on February 23.
+Nurse Kowalski: There's also a concern about the flu vaccine stock running low; we might run out before the end of the month.
+Ms. Haddad: I'll place an emergency order with the pharmacy tomorrow morning.
+Dr. Ellis: Good. We also agreed to stop the paper sign-in sheets from March 1.
+Mr. Osei: Are patients going to be told about the change?
+Dr. Ellis: Someone needs to put up signs in the waiting area about the new process.
+Nurse Kowalski: And what happens to the patients who can't use the kiosks?
+Dr. Ellis: Good question, we haven't figured that out yet.

@@ -1,0 +1,22 @@
+MARTA: Okay, pipeline review for Q3. We're at 1.2 million in committed deals against a 1.5 million target.
+DEREK: The Northwind deal is the big one. They've gone quiet since the security questionnaire.
+MARTA: How long ago did we send it back?
+DEREK: Two weeks. I'm afraid they're evaluating a competitor.
+MARTA: Derek, set up a call with their CTO this week. Bring Lucia from solutions engineering.
+LUCIA: I'm available Thursday or Friday.
+DEREK: I'll book Thursday then.
+PAUL: On the Contoso renewal, they want a 15 percent discount.
+MARTA: We won't go above 10 percent. That's final.
+PAUL: Understood. I'll send them the revised quote today.
+LUCIA: For the Fabrikam pilot, the integration is failing because they're on an old version of their ERP.
+MARTA: Is there a workaround?
+LUCIA: Possibly a CSV import, but I need to test it first.
+MARTA: Okay. Action: Lucia to test the CSV import and report back by Monday.
+PAUL: Should we offer Fabrikam a free extension of the pilot?
+MARTA: Let's hold off on that until Lucia's test is done.
+DEREK: Also, the new pricing sheet still hasn't been published, so reps are quoting old prices.
+MARTA: That needs fixing. Paul, please chase marketing about the pricing sheet.
+PAUL: On it.
+MARTA: Last thing. We decided to move the quarterly business reviews to the second week of each quarter.
+DEREK: Who's preparing the forecast deck for the board?
+MARTA: I'll do it, by the end of the month.

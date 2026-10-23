@@ -1,0 +1,23 @@
+# MeetingMind backend dependencies (Python 3.10+)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+python-multipart>=0.0.9
+python-dotenv>=1.0
+
+# NLP / ML
+torch>=2.1            # CPU build is fine; see README for the CPU-only install command
+transformers>=4.40    # v4 and v5 both supported (generate() is used directly)
+sentence-transformers>=2.6
+spacy>=3.7
+yake>=0.4.8
+dateparser>=1.2
+scikit-learn>=1.3
+numpy>=1.24
+
+# File handling and exports
+python-docx>=1.1
+pypdf>=4.0
+reportlab>=4.0
+
+# spaCy English model (installed with: python -m spacy download en_core_web_sm)

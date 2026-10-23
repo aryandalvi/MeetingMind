@@ -1,0 +1,248 @@
+{
+  "_guidelines": {
+    "action_items": "A task someone is expected to do after the meeting. Owner = person who committed, was named, or accepted the request; 'Unassigned' if nobody did (offers such as 'no promises' do not count). Deadline = resolved ISO date of the final due date, null if none or only vague timing. Relative dates follow the documented convention ('next <weekday>' = that weekday in the following calendar week). Scheduling the next meeting is not labelled as an action unless someone is assigned to do it.",
+    "decisions": "Outcomes the group settled on. confirmed = settled; tentative = provisional, conditional or deferred ('for now', 'if ... then', 'hold off until'); rejected = an option explicitly turned down. Suggestions and questions are not decisions.",
+    "risks": "Problems, risks, concerns or blockers raised as current or future issues (not past incidents being reported as history). blocker = work cannot proceed until something happens.",
+    "questions": "Questions or issues still open at the end of the meeting: unanswered, deferred, or explicitly unresolved.",
+    "evidence": "Each label lists one or more distinctive substrings; a prediction matches if any of its evidence sentences contains one of them (case-insensitive). Each gold item can be matched once.",
+    "split": "dev_* files were used while developing the rules. test_* files were written and labelled before their first evaluation (frozen in RESULTS_heldout_v1.md); error analysis on them then led to further changes, so later test numbers are post-hoc. holdout2_* files were written and labelled after those changes and evaluated once.",
+    "deadline_lists": "A deadline given as a list accepts any of the listed dates (used where the transcript supports two readings)."
+  },
+  "transcripts": [
+    {
+      "id": "sample_launch", "split": "dev", "file": "../../samples/sample_transcript.txt", "meeting_date": "2026-03-04",
+      "actions": [
+        {"evidence": ["I'll fix it by Thursday"], "owner": "Marcus Chen", "deadline": "2026-03-05"},
+        {"evidence": ["I can contact PayFlow today"], "owner": "Elena Rossi", "deadline": "2026-03-04"},
+        {"evidence": ["write up the bug details", "I'll have that to Elena"], "owner": "Marcus Chen", "deadline": "2026-03-04"},
+        {"evidence": ["follow up with legal about the landing page", "I'll take that"], "owner": "David Okafor", "deadline": "2026-03-05"},
+        {"evidence": ["check with finance"], "owner": "David Okafor", "deadline": null},
+        {"evidence": ["press release draft"], "owner": "David Okafor", "deadline": "2026-03-11"},
+        {"evidence": ["update the app store screenshots"], "owner": "Unassigned", "deadline": null},
+        {"evidence": ["staffing proposal"], "owner": "Elena Rossi", "deadline": "2026-03-06"},
+        {"evidence": ["write the FAQ"], "owner": "Unassigned", "deadline": null},
+        {"evidence": ["send the calendar invite"], "owner": "Priya Sharma", "deadline": null}
+      ],
+      "decisions": [
+        {"evidence": ["move the launch to March 17"], "status": "confirmed"},
+        {"evidence": ["not to support Android 9", "Android 9 is out of scope"], "status": "rejected"},
+        {"evidence": ["organic social only"], "status": "tentative"},
+        {"evidence": ["decided against using the old chatbot vendor"], "status": "rejected"},
+        {"evidence": ["internal demo on March 13"], "status": "confirmed"}
+      ],
+      "risks": [
+        {"evidence": ["three critical bugs"], "kind": "risk"},
+        {"evidence": ["we're blocked until PayFlow"], "kind": "blocker"},
+        {"evidence": ["that has been slow", "Legal has had it for two weeks"], "kind": "risk"},
+        {"evidence": ["short-staffed"], "kind": "risk"}
+      ],
+      "questions": [
+        {"evidence": ["paid ads on Instagram"]},
+        {"evidence": ["write the FAQ for the help center?"]},
+        {"evidence": ["we don't have anyone assigned yet", "figure that out offline"]}
+      ]
+    },
+    {
+      "id": "dev_capstone", "split": "dev", "file": "data/dev_capstone.txt", "meeting_date": "2026-11-10",
+      "actions": [
+        {"evidence": ["test the bulk download"], "owner": "Tom", "deadline": "2026-11-11"},
+        {"evidence": ["clickable Figma prototype", "Yes, I can do that"], "owner": "Mei", "deadline": "2026-11-16"},
+        {"evidence": ["cleaned dataset will be ready by Thursday"], "owner": "Tom", "deadline": "2026-11-12"},
+        {"evidence": ["submit the ethics form", "I'll do it, I have the template"], "owner": "Jonas", "deadline": "2026-11-13"},
+        {"evidence": ["email the print shop"], "owner": "Aisha", "deadline": null}
+      ],
+      "decisions": [
+        {"evidence": ["agreed to use gradient boosting", "not spend more time on the neural net"], "status": "confirmed"}
+      ],
+      "risks": [
+        {"evidence": ["rate limited"], "kind": "risk"},
+        {"evidence": ["blocked on Tom"], "kind": "blocker"},
+        {"evidence": ["poster printing deadline"], "kind": "risk"}
+      ],
+      "questions": [
+        {"evidence": ["live or with a recorded video"]}
+      ]
+    },
+    {
+      "id": "dev_incident", "split": "dev", "file": "data/dev_incident.txt", "meeting_date": "2026-03-12",
+      "actions": [
+        {"evidence": ["connection pool alert"], "owner": "Kenji Watanabe", "deadline": "2026-03-13"},
+        {"evidence": ["update the runbook", "please do that before the next on-call"], "owner": "Liam O'Brien", "deadline": "2026-03-16"},
+        {"evidence": ["check the refunds service configuration", "I'll look at it this afternoon"], "owner": "Kenji Watanabe", "deadline": "2026-03-12"},
+        {"evidence": ["check with the comms team"], "owner": "Rosa Delgado", "deadline": null},
+        {"evidence": ["customer impact summary"], "owner": "Priyanka Rao", "deadline": "2026-03-13"},
+        {"evidence": ["own the post-incident follow-up tracker"], "owner": "Unassigned", "deadline": null}
+      ],
+      "decisions": [
+        {"evidence": ["needs a second reviewer"], "status": "confirmed"},
+        {"evidence": ["not roll back to the old load balancer"], "status": "rejected"}
+      ],
+      "risks": [
+        {"evidence": ["alerting only fired after 20 minutes"], "kind": "risk"},
+        {"evidence": ["could fail the same way"], "kind": "risk"},
+        {"evidence": ["still waiting on the vendor's report"], "kind": "blocker"}
+      ],
+      "questions": [
+        {"evidence": ["blog post"]},
+        {"evidence": ["own the post-incident follow-up tracker"]}
+      ]
+    },
+    {
+      "id": "test_gala", "split": "test", "file": "data/test_gala.txt", "meeting_date": "2026-03-25",
+      "actions": [
+        {"evidence": ["get the deposit approved", "ask Victor for approval tomorrow"], "owner": "Hannah", "deadline": "2026-03-26"},
+        {"evidence": ["reach out to the local businesses"], "owner": "Omar", "deadline": null},
+        {"evidence": ["design the auction catalogue"], "owner": "Unassigned", "deadline": null},
+        {"evidence": ["online ticketing page"], "owner": "Hannah", "deadline": "2026-04-03"},
+        {"evidence": ["run-of-show draft"], "owner": "Grace", "deadline": "2026-03-30"}
+      ],
+      "decisions": [
+        {"evidence": ["go with Harbor Catering"], "status": "confirmed"},
+        {"evidence": ["invite Dr. Amara Singh instead"], "status": "tentative"},
+        {"evidence": ["not doing the raffle", "no raffle"], "status": "rejected"}
+      ],
+      "risks": [
+        {"evidence": ["never done more than 150 guests", "that worries me"], "kind": "risk"},
+        {"evidence": ["only have nine items"], "kind": "risk"},
+        {"evidence": ["That's a problem, we need to print", "still nothing from them"], "kind": "risk"}
+      ],
+      "questions": [
+        {"evidence": ["live band or a DJ"]}
+      ]
+    },
+    {
+      "id": "test_sprint", "split": "test", "file": "data/test_sprint.txt", "meeting_date": "2026-06-01",
+      "actions": [
+        {"evidence": ["picking up the date range picker", "I'll have it done by Wednesday"], "owner": "Sofia Lindgren", "deadline": "2026-06-03"},
+        {"evidence": ["design doc for the sync approach", "I'll share it Thursday"], "owner": "Carlos Mendez", "deadline": "2026-06-04"},
+        {"evidence": ["escalate it to their manager"], "owner": "Nadia Petrova", "deadline": null},
+        {"evidence": ["update the calendar invite"], "owner": "Ben Adeyemi", "deadline": null}
+      ],
+      "decisions": [
+        {"evidence": ["keep iOS 14 for now"], "status": "tentative"},
+        {"evidence": ["sprint review moves to Friday afternoon", "move the sprint review to Friday"], "status": "confirmed"}
+      ],
+      "risks": [
+        {"evidence": ["could corrupt user data", "offline mode is the risky one"], "kind": "risk"},
+        {"evidence": ["staging environment has been down", "That blocks the release candidate"], "kind": "blocker"}
+      ],
+      "questions": [
+        {"evidence": ["accessibility audit this quarter"]}
+      ]
+    },
+    {
+      "id": "test_clinic", "split": "test", "file": "data/test_clinic.txt", "meeting_date": "2026-02-09",
+      "actions": [
+        {"evidence": ["finalise the job description", "I'll send it to HR on Wednesday"], "owner": "Nurse Kowalski", "deadline": "2026-02-11"},
+        {"evidence": ["call the IT director today"], "owner": "Dr. Ellis", "deadline": "2026-02-09"},
+        {"evidence": ["pull the rota data", "have that ready for the next meeting"], "owner": "Mr. Osei", "deadline": "2026-02-23"},
+        {"evidence": ["emergency order with the pharmacy"], "owner": "Ms. Haddad", "deadline": "2026-02-10"},
+        {"evidence": ["put up signs in the waiting area"], "owner": "Unassigned", "deadline": null}
+      ],
+      "decisions": [
+        {"evidence": ["approved the budget for one additional permanent nurse"], "status": "confirmed"},
+        {"evidence": ["stop the paper sign-in sheets"], "status": "confirmed"}
+      ],
+      "risks": [
+        {"evidence": ["Waiting times in the morning clinic"], "kind": "risk"},
+        {"evidence": ["down two nurses", "agency staff keep cancelling"], "kind": "risk"},
+        {"evidence": ["stuck in storage", "waiting for the network security review"], "kind": "blocker"},
+        {"evidence": ["flu vaccine stock running low"], "kind": "risk"}
+      ],
+      "questions": [
+        {"evidence": ["patients who can't use the kiosks", "haven't figured that out"]}
+      ]
+    },
+    {
+      "id": "test_sales", "split": "test", "file": "data/test_sales.txt", "meeting_date": "2026-07-06",
+      "actions": [
+        {"evidence": ["set up a call with their CTO", "I'll book Thursday"], "owner": "Derek", "deadline": "2026-07-09"},
+        {"evidence": ["send them the revised quote"], "owner": "Paul", "deadline": "2026-07-06"},
+        {"evidence": ["test the CSV import"], "owner": "Lucia", "deadline": "2026-07-13"},
+        {"evidence": ["chase marketing about the pricing sheet"], "owner": "Paul", "deadline": null},
+        {"evidence": ["preparing the forecast deck", "I'll do it, by the end of the month"], "owner": "Marta", "deadline": "2026-07-31"}
+      ],
+      "decisions": [
+        {"evidence": ["won't go above 10 percent"], "status": "rejected"},
+        {"evidence": ["move the quarterly business reviews"], "status": "confirmed"},
+        {"evidence": ["hold off on that until"], "status": "tentative"}
+      ],
+      "risks": [
+        {"evidence": ["gone quiet since the security questionnaire", "evaluating a competitor"], "kind": "risk"},
+        {"evidence": ["integration is failing"], "kind": "blocker"},
+        {"evidence": ["quoting old prices", "pricing sheet still hasn't been published"], "kind": "risk"}
+      ],
+      "questions": [
+        {"evidence": ["free extension of the pilot"]}
+      ]
+    },
+    {
+      "id": "holdout2_lab", "split": "holdout2", "file": "data/holdout2_lab.vtt", "meeting_date": "2026-11-04",
+      "actions": [
+        {"evidence": ["finish those figures", "I'll have them ready by Friday"], "owner": "Leo Martins", "deadline": "2026-11-06"},
+        {"evidence": ["talk to the facility manager"], "owner": "Dr. Farah Nasser", "deadline": null},
+        {"evidence": ["call the service company tomorrow"], "owner": "Ines Duarte", "deadline": "2026-11-05"},
+        {"evidence": ["move the critical samples", "I'll do that right after this"], "owner": "Sam Okoye", "deadline": "2026-11-04"}
+      ],
+      "decisions": [
+        {"evidence": ["leave the mouse data out"], "status": "confirmed"},
+        {"evidence": ["switch to the new electronic lab notebook"], "status": "confirmed"}
+      ],
+      "risks": [
+        {"evidence": ["booked solid", "can't image the new samples", "real bottleneck"], "kind": "blocker"},
+        {"evidence": ["freezer alarm", "worried it's failing"], "kind": "risk"}
+      ],
+      "questions": [
+        {"evidence": ["present at the department seminar"]}
+      ]
+    },
+    {
+      "id": "holdout2_construction", "split": "holdout2", "file": "data/holdout2_construction.txt", "meeting_date": "2026-05-11",
+      "actions": [
+        {"evidence": ["rebook the inspector", "call the city office first thing tomorrow"], "owner": "Ricardo Silva", "deadline": ["2026-05-12", "2026-05-13"]},
+        {"evidence": ["firm delivery date in writing"], "owner": "Ana Kovac", "deadline": null},
+        {"evidence": ["toolbox talk", "I'll run it Monday at seven"], "owner": "Ruth Bell", "deadline": "2026-05-18"},
+        {"evidence": ["ask the project director"], "owner": "Kofi Mensah", "deadline": null}
+      ],
+      "decisions": [
+        {"evidence": ["move the pour to Saturday morning"], "status": "tentative"},
+        {"evidence": ["keeping the tower crane until the roof is done"], "status": "confirmed"},
+        {"evidence": ["not to work Sundays", "no Sunday work"], "status": "rejected"}
+      ],
+      "risks": [
+        {"evidence": ["heavy rain Thursday afternoon"], "kind": "risk"},
+        {"evidence": ["rebar inspection hasn't happened", "can't pour at all"], "kind": "blocker"},
+        {"evidence": ["delivery will slip by three weeks"], "kind": "risk"},
+        {"evidence": ["without harnesses"], "kind": "risk"},
+        {"evidence": ["noise complaints"], "kind": "risk"}
+      ],
+      "questions": [
+        {"evidence": ["neighbours' noise complaints", "not sure how to handle that"]}
+      ]
+    },
+    {
+      "id": "holdout2_school", "split": "holdout2", "file": "data/holdout2_school.txt", "meeting_date": "2026-01-14",
+      "actions": [
+        {"evidence": ["send a call for volunteers", "draft the email tonight"], "owner": "Mrs. Abebe", "deadline": "2026-01-15"},
+        {"evidence": ["speak with the athletics director"], "owner": "Principal Rivera", "deadline": "2026-01-16"},
+        {"evidence": ["notify them by the end of the month", "Who is going to tell the current vendor"], "owner": "Principal Rivera", "deadline": "2026-01-31"},
+        {"evidence": ["check their allergen policy"], "owner": "Ms. Laurent", "deadline": null},
+        {"evidence": ["report on the lunch complaints"], "owner": "Ms. Laurent", "deadline": null}
+      ],
+      "decisions": [
+        {"evidence": ["fair stays in the gym"], "status": "confirmed"},
+        {"evidence": ["approved the trial with GreenPlate"], "status": "confirmed"},
+        {"evidence": ["let's see how the trial goes"], "status": "tentative"}
+      ],
+      "risks": [
+        {"evidence": ["only six judges"], "kind": "risk"},
+        {"evidence": ["double-booked"], "kind": "risk"},
+        {"evidence": ["portions are too small", "deliveries are often late"], "kind": "risk"}
+      ],
+      "questions": [
+        {"evidence": ["handle the allergy requirements", "Not yet. I need to check"]},
+        {"evidence": ["survey students about the menu"]}
+      ]
+    }
+  ]
+}
