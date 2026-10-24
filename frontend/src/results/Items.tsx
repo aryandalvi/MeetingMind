@@ -16,7 +16,7 @@ function Filters<T extends string>({ options, value, onChange }: { options: { ke
           aria-pressed={value === o.key}
           className={cx(
             "rounded-full border px-3 py-1 text-xs transition",
-            value === o.key ? "border-violet-400 bg-lavender-50 font-medium text-violet-700" : "border-line bg-surface text-muted hover:text-ink",
+            value === o.key ? "border-lavender-300 bg-lavender-100 font-medium text-ink" : "border-line bg-wash-1 text-muted hover:text-ink",
           )}
         >
           {o.label} <span className="text-faint">{o.count}</span>
@@ -29,7 +29,7 @@ function Filters<T extends string>({ options, value, onChange }: { options: { ke
 function ReviewNote({ reasons }: { reasons: string[] }) {
   if (!reasons.length) return null;
   return (
-    <div className="mt-2 flex items-start gap-1.5 rounded-lg bg-amber-50 px-2.5 py-1.5 text-xs text-amber-600">
+    <div className="mt-2 flex items-start gap-1.5 rounded-lg border border-amber-600/25 bg-amber-50 px-2.5 py-1.5 text-xs text-amber-600">
       <Flag className="mt-px h-3.5 w-3.5 shrink-0" />
       <span>{reasons.join(" ")}</span>
     </div>

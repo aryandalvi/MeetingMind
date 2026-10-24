@@ -32,10 +32,10 @@ export function ConfirmDialog({
         e.preventDefault();
         onCancel();
       }}
-      className="m-auto w-[min(92vw,440px)] rounded-2xl border border-line bg-surface p-0 shadow-[var(--shadow-lift)] backdrop:bg-ink/25 backdrop:backdrop-blur-[2px]"
+      className="m-auto w-[min(92vw,440px)] rounded-2xl border border-line-strong bg-surface-2 p-0 text-ink shadow-[var(--shadow-lift)] backdrop:bg-black/55 backdrop:backdrop-blur-sm"
     >
       <div className="p-6">
-        <h3 className="text-lg font-semibold text-ink">{title}</h3>
+        <h3 className="display text-lg font-semibold tracking-[-0.01em]">{title}</h3>
         <div className="mt-2 text-sm leading-relaxed text-muted">{children}</div>
         <div className="mt-6 flex justify-end gap-2">
           <Button variant="secondary" onClick={onCancel}>

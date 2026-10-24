@@ -17,11 +17,11 @@ export function ExecutiveSummary({ report }: { report: AnalysisReport }) {
             : "Extractive summary: the most central sentences of the meeting, quoted as spoken."
         }
       />
-      <div className="card p-6">
+      <div className="card border-t-2 border-t-violet-500 p-6">
         <ul className="space-y-4">
           {sm.executive.map((s, i) => (
             <li key={i} className="flex gap-3">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400" />
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-lime-400 shadow-[0_0_8px_var(--color-lime-400)]" />
               <div className="flex-1">
                 <p className="text-[15.5px] leading-relaxed text-ink">
                   {s.text}
@@ -38,7 +38,7 @@ export function ExecutiveSummary({ report }: { report: AnalysisReport }) {
             </li>
           ))}
         </ul>
-        <div className="mt-5 flex items-start gap-2 rounded-xl bg-mist p-3 text-xs leading-relaxed text-muted">
+        <div className="mt-5 flex items-start gap-2 rounded-xl border border-line bg-wash-1 p-3 text-xs leading-relaxed text-muted">
           <Info className="mt-px h-3.5 w-3.5 shrink-0" />
           <span>
             AI-generated summaries can merge or misattribute details.
@@ -65,7 +65,7 @@ export function ExecutiveSummary({ report }: { report: AnalysisReport }) {
           <div className="space-y-5">
             {sm.detailed.map((sec) => (
               <div key={sec.topic_id}>
-                <div className="mb-1.5 text-[13px] font-semibold text-violet-700">{sec.title}</div>
+                <div className="mb-1.5 font-mono text-[12px] font-medium text-violet-300">{sec.title}</div>
                 <div className="space-y-2">
                   {sec.sentences.map((s, i) => (
                     <div key={i}>
@@ -96,7 +96,7 @@ export function Topics({ report }: { report: AnalysisReport }) {
       <ol className="relative space-y-4 border-l border-lavender-200 pl-6">
         {report.topics.map((t, i) => (
           <li key={t.id} className="relative">
-            <span className="display absolute top-4 -left-[37px] grid h-7 w-7 place-items-center rounded-full border border-lavender-200 bg-surface text-sm text-violet-600">
+            <span className="absolute top-4 -left-[37px] grid h-7 w-7 place-items-center rounded-full border border-lavender-300 bg-surface font-mono text-[11px] text-violet-300 shadow-[0_0_12px_rgb(139_92_246/0.35)]">
               {i + 1}
             </span>
             <div className="card p-5">
@@ -119,7 +119,7 @@ export function Topics({ report }: { report: AnalysisReport }) {
                       <li key={kp.text}>
                         <button
                           onClick={() => navigate(`/results/evidence?s=${kp.evidence[0]?.sentence_id}`)}
-                          className="w-full rounded-lg bg-lavender-50/60 px-3 py-1.5 text-left text-[13px] text-ink-soft hover:bg-lavender-50"
+                          className="w-full rounded-lg bg-wash-1 px-3 py-1.5 text-left text-[13px] text-ink-soft hover:bg-wash-2"
                         >
                           {kp.evidence[0]?.speaker && <span className="mr-1.5 text-[11px] font-semibold text-violet-600">{kp.evidence[0].speaker}</span>}
                           {kp.text}

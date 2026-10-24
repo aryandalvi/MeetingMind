@@ -45,16 +45,16 @@ export function ExportMenu({ report }: { report: AnalysisReport }) {
         <ChevronDown className="h-4 w-4 opacity-80" />
       </Button>
       {open && (
-        <div role="menu" className="card absolute right-0 z-30 mt-2 w-72 p-1.5 shadow-[var(--shadow-lift)]">
+        <div role="menu" className="absolute right-0 z-30 mt-2 w-72 rounded-2xl border border-line-strong bg-surface-2/95 p-1.5 shadow-[var(--shadow-lift)] backdrop-blur-xl">
           {OPTIONS.map(({ format, label, hint, icon: Icon }) => (
             <button
               key={format}
               role="menuitem"
               onClick={() => run(format)}
               disabled={busy !== null}
-              className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left transition hover:bg-lavender-50 disabled:opacity-60"
+              className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left transition hover:bg-wash-2 disabled:opacity-60"
             >
-              <span className="grid h-8 w-8 place-items-center rounded-lg bg-lavender-50 text-violet-600">
+              <span className="grid h-8 w-8 place-items-center rounded-lg border border-lavender-200 bg-lavender-50 text-violet-400">
                 <Icon className="h-4 w-4" />
               </span>
               <span className="flex-1">
@@ -63,7 +63,7 @@ export function ExportMenu({ report }: { report: AnalysisReport }) {
               </span>
             </button>
           ))}
-          <p className="px-3 pt-1.5 pb-1 text-[11px] text-faint">Exports include your latest edits.</p>
+          <p className="px-3 pt-1.5 pb-1 font-mono text-[10.5px] text-faint">Exports include your latest edits.</p>
           {error && <p className="px-3 pb-2 text-xs text-rose-600">{error}</p>}
         </div>
       )}
